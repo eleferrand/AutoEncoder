@@ -1,0 +1,2806 @@
+2020-04-29 07:28:43.127712: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-29 07:28:44.070691: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5590dd640700 executing computations on platform CUDA. Devices:
+2020-04-29 07:28:44.070753: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): GeForce GTX 980, Compute Capability 5.2
+2020-04-29 07:28:44.070770: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): GeForce GTX 980, Compute Capability 5.2
+2020-04-29 07:28:44.075114: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399750000 Hz
+2020-04-29 07:28:44.077652: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5590dd738eb0 executing computations on platform Host. Devices:
+2020-04-29 07:28:44.077690: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2020-04-29 07:28:44.078250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2785
+pciBusID: 0000:03:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-04-29 07:28:44.078660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 1 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.2785
+pciBusID: 0000:83:00.0
+totalMemory: 3.95GiB freeMemory: 3.87GiB
+2020-04-29 07:28:44.078725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0, 1
+2020-04-29 07:28:44.080971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-29 07:28:44.080999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 1 
+2020-04-29 07:28:44.081011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N N 
+2020-04-29 07:28:44.081021: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 1:   N N 
+2020-04-29 07:28:44.081857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3665 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:03:00.0, compute capability: 5.2)
+2020-04-29 07:28:44.082543: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 3665 MB memory) -> physical GPU (device: 1, name: GeForce GTX 980, pci bus id: 0000:83:00.0, compute capability: 5.2)
+Epoch:  0
+WARNING:tensorflow:From /home/getalp/leferrae/.local/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:642: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING - From /home/getalp/leferrae/.local/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:642: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2020-04-29 07:28:51.702216: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+WARNING:tensorflow:From /home/getalp/leferrae/.local/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:667: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING - From /home/getalp/leferrae/.local/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:667: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+batch nb. 0      loss: 0.024470722302794456
+batch nb. 1      loss: 0.025331217795610428
+batch nb. 2      loss: 0.024176480248570442
+batch nb. 3      loss: 0.021502574905753136
+batch nb. 4      loss: 0.02113870158791542
+batch nb. 5      loss: 0.021304551512002945
+batch nb. 6      loss: 0.023636961355805397
+batch nb. 7      loss: 0.020748233422636986
+batch nb. 8      loss: 0.017970005050301552
+batch nb. 9      loss: 0.01769545115530491
+batch nb. 10      loss: 0.016202406957745552
+batch nb. 11      loss: 0.017922647297382355
+batch nb. 12      loss: 0.017406396567821503
+batch nb. 13      loss: 0.016209589317440987
+batch nb. 14      loss: 0.015728024765849113
+batch nb. 15      loss: 0.015459691174328327
+validation:          Loss: 0.01635664328932762 train loss : 0.015459691174328327
+WARNING:tensorflow:From /home/getalp/leferrae/.local/lib/python3.6/site-packages/tensorflow/python/keras/engine/network.py:1436: update_checkpoint_state (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.train.CheckpointManager to manage checkpoints rather than manually editing the Checkpoint proto.
+WARNING - From /home/getalp/leferrae/.local/lib/python3.6/site-packages/tensorflow/python/keras/engine/network.py:1436: update_checkpoint_state (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.train.CheckpointManager to manage checkpoints rather than manually editing the Checkpoint proto.
+new best model
+Epoch:  1
+batch nb. 0      loss: 0.017899414524435997
+batch nb. 1      loss: 0.017715975642204285
+batch nb. 2      loss: 0.01669376716017723
+batch nb. 3      loss: 0.014909137040376663
+batch nb. 4      loss: 0.014883449301123619
+batch nb. 5      loss: 0.015185076743364334
+batch nb. 6      loss: 0.01711972989141941
+batch nb. 7      loss: 0.015013769268989563
+batch nb. 8      loss: 0.013415331952273846
+batch nb. 9      loss: 0.014363721013069153
+batch nb. 10      loss: 0.012929555028676987
+batch nb. 11      loss: 0.01513123232871294
+batch nb. 12      loss: 0.015023265965282917
+batch nb. 13      loss: 0.012972449883818626
+batch nb. 14      loss: 0.012301400303840637
+batch nb. 15      loss: 0.011672711931169033
+validation:          Loss: 0.013088245876133442 train loss : 0.01356620155274868
+new best model
+Epoch:  2
+batch nb. 0      loss: 0.014277933165431023
+batch nb. 1      loss: 0.013683647848665714
+batch nb. 2      loss: 0.012755041942000389
+batch nb. 3      loss: 0.011792146600782871
+batch nb. 4      loss: 0.01201306376606226
+batch nb. 5      loss: 0.012362349778413773
+batch nb. 6      loss: 0.014152449555695057
+batch nb. 7      loss: 0.012590783648192883
+batch nb. 8      loss: 0.01175472978502512
+batch nb. 9      loss: 0.013084858655929565
+batch nb. 10      loss: 0.011786707676947117
+batch nb. 11      loss: 0.013828197494149208
+batch nb. 12      loss: 0.013633256778120995
+batch nb. 13      loss: 0.011373063549399376
+batch nb. 14      loss: 0.010821053758263588
+batch nb. 15      loss: 0.010224228724837303
+validation:          Loss: 0.011649330146610737 train loss : 0.012452210299670696
+new best model
+Epoch:  3
+batch nb. 0      loss: 0.012602549046278
+batch nb. 1      loss: 0.01196136511862278
+batch nb. 2      loss: 0.011026577092707157
+batch nb. 3      loss: 0.010410690680146217
+batch nb. 4      loss: 0.0105265649035573
+batch nb. 5      loss: 0.010883078910410404
+batch nb. 6      loss: 0.012446831911802292
+batch nb. 7      loss: 0.011054811999201775
+batch nb. 8      loss: 0.010394318029284477
+batch nb. 9      loss: 0.011816209182143211
+batch nb. 10      loss: 0.010694770142436028
+batch nb. 11      loss: 0.012709403410553932
+batch nb. 12      loss: 0.012633572332561016
+batch nb. 13      loss: 0.01029148418456316
+batch nb. 14      loss: 0.009592454880475998
+batch nb. 15      loss: 0.009057138115167618
+validation:          Loss: 0.010434899479150772 train loss : 0.011603442020714283
+new best model
+Epoch:  4
+batch nb. 0      loss: 0.0111545380204916
+batch nb. 1      loss: 0.01031928975135088
+batch nb. 2      loss: 0.009466400370001793
+batch nb. 3      loss: 0.009088999591767788
+batch nb. 4      loss: 0.009390421211719513
+batch nb. 5      loss: 0.009572207927703857
+batch nb. 6      loss: 0.011011932976543903
+batch nb. 7      loss: 0.009875641204416752
+batch nb. 8      loss: 0.009412962011992931
+batch nb. 9      loss: 0.010838303714990616
+batch nb. 10      loss: 0.009879549965262413
+batch nb. 11      loss: 0.011567538604140282
+batch nb. 12      loss: 0.011519607156515121
+batch nb. 13      loss: 0.009367058984935284
+batch nb. 14      loss: 0.008710665628314018
+batch nb. 15      loss: 0.008001739159226418
+validation:          Loss: 0.009415630251169205 train loss : 0.01088310219347477
+new best model
+Epoch:  5
+batch nb. 0      loss: 0.009957903064787388
+batch nb. 1      loss: 0.009055249392986298
+batch nb. 2      loss: 0.008284499868750572
+batch nb. 3      loss: 0.00804929994046688
+batch nb. 4      loss: 0.00831550545990467
+batch nb. 5      loss: 0.008529036305844784
+batch nb. 6      loss: 0.009834506548941135
+batch nb. 7      loss: 0.008834157139062881
+batch nb. 8      loss: 0.008551513776183128
+batch nb. 9      loss: 0.010001440532505512
+batch nb. 10      loss: 0.009175009094178677
+batch nb. 11      loss: 0.01073745358735323
+batch nb. 12      loss: 0.01066673919558525
+batch nb. 13      loss: 0.008631023578345776
+batch nb. 14      loss: 0.008037206716835499
+batch nb. 15      loss: 0.007425585761666298
+validation:          Loss: 0.00863307248800993 train loss : 0.010306849144399166
+new best model
+Epoch:  6
+batch nb. 0      loss: 0.008989992551505566
+batch nb. 1      loss: 0.008196684531867504
+batch nb. 2      loss: 0.007493111304938793
+batch nb. 3      loss: 0.007271199952811003
+batch nb. 4      loss: 0.007576193194836378
+batch nb. 5      loss: 0.007809434086084366
+batch nb. 6      loss: 0.009029528126120567
+batch nb. 7      loss: 0.008080772124230862
+batch nb. 8      loss: 0.008048094809055328
+batch nb. 9      loss: 0.009536915458738804
+batch nb. 10      loss: 0.008673997595906258
+batch nb. 11      loss: 0.010051276534795761
+batch nb. 12      loss: 0.010063119232654572
+batch nb. 13      loss: 0.00811722595244646
+batch nb. 14      loss: 0.0075994315557181835
+batch nb. 15      loss: 0.007047909777611494
+validation:          Loss: 0.008196822367608547 train loss : 0.009841285645961761
+new best model
+Epoch:  7
+batch nb. 0      loss: 0.00846685841679573
+batch nb. 1      loss: 0.007635884918272495
+batch nb. 2      loss: 0.006889748852699995
+batch nb. 3      loss: 0.006746202707290649
+batch nb. 4      loss: 0.007040264550596476
+batch nb. 5      loss: 0.007289724424481392
+batch nb. 6      loss: 0.008387950249016285
+batch nb. 7      loss: 0.007621095050126314
+batch nb. 8      loss: 0.007732384372502565
+batch nb. 9      loss: 0.009266325272619724
+batch nb. 10      loss: 0.008494831621646881
+batch nb. 11      loss: 0.00971982255578041
+batch nb. 12      loss: 0.009681403636932373
+batch nb. 13      loss: 0.0077205197885632515
+batch nb. 14      loss: 0.00715650524944067
+batch nb. 15      loss: 0.006760300602763891
+validation:          Loss: 0.007817105390131474 train loss : 0.00945616327226162
+new best model
+Epoch:  8
+batch nb. 0      loss: 0.008072895929217339
+batch nb. 1      loss: 0.00723741902038455
+batch nb. 2      loss: 0.006527725141495466
+batch nb. 3      loss: 0.006341307424008846
+batch nb. 4      loss: 0.0066343192011117935
+batch nb. 5      loss: 0.006799777038395405
+batch nb. 6      loss: 0.007885688915848732
+batch nb. 7      loss: 0.007152928970754147
+batch nb. 8      loss: 0.007373111322522163
+batch nb. 9      loss: 0.008933275938034058
+batch nb. 10      loss: 0.008123793639242649
+batch nb. 11      loss: 0.009372924454510212
+batch nb. 12      loss: 0.009296970441937447
+batch nb. 13      loss: 0.007468522526323795
+batch nb. 14      loss: 0.006822030525654554
+batch nb. 15      loss: 0.006419990211725235
+validation:          Loss: 0.0074564921669662 train loss : 0.009118810296058655
+new best model
+Epoch:  9
+batch nb. 0      loss: 0.007628282066434622
+batch nb. 1      loss: 0.006811571307480335
+batch nb. 2      loss: 0.006178501062095165
+batch nb. 3      loss: 0.006102773826569319
+batch nb. 4      loss: 0.006304780021309853
+batch nb. 5      loss: 0.006440846715122461
+batch nb. 6      loss: 0.007435767445713282
+batch nb. 7      loss: 0.0067710732109844685
+batch nb. 8      loss: 0.0071443067863583565
+batch nb. 9      loss: 0.008654661476612091
+batch nb. 10      loss: 0.007892907597124577
+batch nb. 11      loss: 0.008944745175540447
+batch nb. 12      loss: 0.008999978192150593
+batch nb. 13      loss: 0.007085008546710014
+batch nb. 14      loss: 0.006557251326739788
+batch nb. 15      loss: 0.006142199970781803
+validation:          Loss: 0.0071064792573452 train loss : 0.008821149356663227
+new best model
+Epoch:  10
+batch nb. 0      loss: 0.007219783961772919
+batch nb. 1      loss: 0.006408684886991978
+batch nb. 2      loss: 0.005779493134468794
+batch nb. 3      loss: 0.005748336669057608
+batch nb. 4      loss: 0.005950812250375748
+batch nb. 5      loss: 0.006140845827758312
+batch nb. 6      loss: 0.0070937699638307095
+batch nb. 7      loss: 0.00649395352229476
+batch nb. 8      loss: 0.00697792274877429
+batch nb. 9      loss: 0.008574509993195534
+batch nb. 10      loss: 0.007685781456530094
+batch nb. 11      loss: 0.008757064118981361
+batch nb. 12      loss: 0.008716427721083164
+batch nb. 13      loss: 0.006914800964295864
+batch nb. 14      loss: 0.0063716815784573555
+batch nb. 15      loss: 0.006071747280657291
+validation:          Loss: 0.007075706962496042 train loss : 0.008571203798055649
+new best model
+Epoch:  11
+batch nb. 0      loss: 0.007160734385251999
+batch nb. 1      loss: 0.006235400680452585
+batch nb. 2      loss: 0.005487178917974234
+batch nb. 3      loss: 0.005583802703768015
+batch nb. 4      loss: 0.005848987028002739
+batch nb. 5      loss: 0.006060885731130838
+batch nb. 6      loss: 0.0069711096584796906
+batch nb. 7      loss: 0.006304615177214146
+batch nb. 8      loss: 0.006808036472648382
+batch nb. 9      loss: 0.008374427445232868
+batch nb. 10      loss: 0.007488773204386234
+batch nb. 11      loss: 0.008614234626293182
+batch nb. 12      loss: 0.008559498935937881
+batch nb. 13      loss: 0.006747888401150703
+batch nb. 14      loss: 0.0063201361335814
+batch nb. 15      loss: 0.00617142952978611
+validation:          Loss: 0.007003473583608866 train loss : 0.008371221832931042
+new best model
+Epoch:  12
+batch nb. 0      loss: 0.007191007491201162
+batch nb. 1      loss: 0.006149348337203264
+batch nb. 2      loss: 0.005349976476281881
+batch nb. 3      loss: 0.005428984295576811
+batch nb. 4      loss: 0.005662466865032911
+batch nb. 5      loss: 0.0058356053195893764
+batch nb. 6      loss: 0.006830490194261074
+batch nb. 7      loss: 0.006267140153795481
+batch nb. 8      loss: 0.006804171949625015
+batch nb. 9      loss: 0.008449731394648552
+batch nb. 10      loss: 0.0074921962805092335
+batch nb. 11      loss: 0.008502420969307423
+batch nb. 12      loss: 0.008405406028032303
+batch nb. 13      loss: 0.006559161003679037
+batch nb. 14      loss: 0.006107384338974953
+batch nb. 15      loss: 0.005788586102426052
+validation:          Loss: 0.006960554979741573 train loss : 0.008172557689249516
+new best model
+Epoch:  13
+batch nb. 0      loss: 0.007034188136458397
+batch nb. 1      loss: 0.006185072939842939
+batch nb. 2      loss: 0.005447643343359232
+batch nb. 3      loss: 0.005423560738563538
+batch nb. 4      loss: 0.005603328347206116
+batch nb. 5      loss: 0.0056887282989919186
+batch nb. 6      loss: 0.00659868074581027
+batch nb. 7      loss: 0.00597715750336647
+batch nb. 8      loss: 0.0064704143442213535
+batch nb. 9      loss: 0.008032113313674927
+batch nb. 10      loss: 0.007286414038389921
+batch nb. 11      loss: 0.008365392684936523
+batch nb. 12      loss: 0.008289329707622528
+batch nb. 13      loss: 0.006461780983954668
+batch nb. 14      loss: 0.005977097433060408
+batch nb. 15      loss: 0.005670465994626284
+validation:          Loss: 0.00659077288582921 train loss : 0.007993836887180805
+new best model
+Epoch:  14
+batch nb. 0      loss: 0.006617662496864796
+batch nb. 1      loss: 0.005818316247314215
+batch nb. 2      loss: 0.0052040209993720055
+batch nb. 3      loss: 0.005121894180774689
+batch nb. 4      loss: 0.00542178051546216
+batch nb. 5      loss: 0.005604549311101437
+batch nb. 6      loss: 0.006382578518241644
+batch nb. 7      loss: 0.005868713837116957
+batch nb. 8      loss: 0.006461977027356625
+batch nb. 9      loss: 0.007851125672459602
+batch nb. 10      loss: 0.00712656369432807
+batch nb. 11      loss: 0.008076434955000877
+batch nb. 12      loss: 0.008036740124225616
+batch nb. 13      loss: 0.006396941840648651
+batch nb. 14      loss: 0.005788401234894991
+batch nb. 15      loss: 0.005512813106179237
+validation:          Loss: 0.006470098625868559 train loss : 0.00782843492925167
+new best model
+Epoch:  15
+batch nb. 0      loss: 0.006479969713836908
+batch nb. 1      loss: 0.005692703649401665
+batch nb. 2      loss: 0.005076732952147722
+batch nb. 3      loss: 0.005123353097587824
+batch nb. 4      loss: 0.005334744695574045
+batch nb. 5      loss: 0.005410060286521912
+batch nb. 6      loss: 0.006196442060172558
+batch nb. 7      loss: 0.005674488376826048
+batch nb. 8      loss: 0.006207487545907497
+batch nb. 9      loss: 0.007573969662189484
+batch nb. 10      loss: 0.006971360649913549
+batch nb. 11      loss: 0.00792989693582058
+batch nb. 12      loss: 0.007890518754720688
+batch nb. 13      loss: 0.006111846771091223
+batch nb. 14      loss: 0.005612273700535297
+batch nb. 15      loss: 0.00538759445771575
+validation:          Loss: 0.006238073576241732 train loss : 0.007675883360207081
+new best model
+Epoch:  16
+batch nb. 0      loss: 0.00631038099527359
+batch nb. 1      loss: 0.005487065762281418
+batch nb. 2      loss: 0.004856203217059374
+batch nb. 3      loss: 0.0048814453184604645
+batch nb. 4      loss: 0.005147062242031097
+batch nb. 5      loss: 0.005266082938760519
+batch nb. 6      loss: 0.006018262356519699
+batch nb. 7      loss: 0.005511217284947634
+batch nb. 8      loss: 0.006035695783793926
+batch nb. 9      loss: 0.007368688937276602
+batch nb. 10      loss: 0.006732914596796036
+batch nb. 11      loss: 0.007685898337513208
+batch nb. 12      loss: 0.007656891830265522
+batch nb. 13      loss: 0.005916074849665165
+batch nb. 14      loss: 0.005417114123702049
+batch nb. 15      loss: 0.0051877135410904884
+validation:          Loss: 0.0059651220217347145 train loss : 0.007529520895332098
+new best model
+Epoch:  17
+batch nb. 0      loss: 0.006013455335050821
+batch nb. 1      loss: 0.005296105984598398
+batch nb. 2      loss: 0.004639300983399153
+batch nb. 3      loss: 0.004669651389122009
+batch nb. 4      loss: 0.004938766825944185
+batch nb. 5      loss: 0.0050260936841368675
+batch nb. 6      loss: 0.005812617018818855
+batch nb. 7      loss: 0.005310556851327419
+batch nb. 8      loss: 0.0058661652728915215
+batch nb. 9      loss: 0.007228092290461063
+batch nb. 10      loss: 0.006482618860900402
+batch nb. 11      loss: 0.00747564435005188
+batch nb. 12      loss: 0.0075029730796813965
+batch nb. 13      loss: 0.005742610897868872
+batch nb. 14      loss: 0.005277122836560011
+batch nb. 15      loss: 0.005090269260108471
+validation:          Loss: 0.00582860317081213 train loss : 0.007394006475806236
+new best model
+Epoch:  18
+batch nb. 0      loss: 0.00581356743350625
+batch nb. 1      loss: 0.005145502742379904
+batch nb. 2      loss: 0.004589777905493975
+batch nb. 3      loss: 0.0045512826181948185
+batch nb. 4      loss: 0.004831759724766016
+batch nb. 5      loss: 0.004958732519298792
+batch nb. 6      loss: 0.005655972752720118
+batch nb. 7      loss: 0.005198017694056034
+batch nb. 8      loss: 0.005742750596255064
+batch nb. 9      loss: 0.007083812262862921
+batch nb. 10      loss: 0.006462676916271448
+batch nb. 11      loss: 0.007396611850708723
+batch nb. 12      loss: 0.00730295991525054
+batch nb. 13      loss: 0.005674291402101517
+batch nb. 14      loss: 0.005218631122261286
+batch nb. 15      loss: 0.004988570231944323
+validation:          Loss: 0.005663326941430569 train loss : 0.007267404347658157
+new best model
+Epoch:  19
+batch nb. 0      loss: 0.0056978738866746426
+batch nb. 1      loss: 0.004871135577559471
+batch nb. 2      loss: 0.004355413839221001
+batch nb. 3      loss: 0.004459313116967678
+batch nb. 4      loss: 0.00466623529791832
+batch nb. 5      loss: 0.004799460526555777
+batch nb. 6      loss: 0.0055860485881567
+batch nb. 7      loss: 0.005110404919832945
+batch nb. 8      loss: 0.005610867869108915
+batch nb. 9      loss: 0.006955380085855722
+batch nb. 10      loss: 0.006343675311654806
+batch nb. 11      loss: 0.007146098185330629
+batch nb. 12      loss: 0.007163702975958586
+batch nb. 13      loss: 0.005538501311093569
+batch nb. 14      loss: 0.005107241682708263
+batch nb. 15      loss: 0.0048480406403541565
+validation:          Loss: 0.005632428918033838 train loss : 0.0071464357897639275
+new best model
+Epoch:  20
+batch nb. 0      loss: 0.005616549868136644
+batch nb. 1      loss: 0.004922253079712391
+batch nb. 2      loss: 0.00432028342038393
+batch nb. 3      loss: 0.004392704460769892
+batch nb. 4      loss: 0.004634103272110224
+batch nb. 5      loss: 0.004722656216472387
+batch nb. 6      loss: 0.005445368122309446
+batch nb. 7      loss: 0.005006559193134308
+batch nb. 8      loss: 0.005468366201967001
+batch nb. 9      loss: 0.006798201706260443
+batch nb. 10      loss: 0.006243635900318623
+batch nb. 11      loss: 0.00705695291981101
+batch nb. 12      loss: 0.007018644362688065
+batch nb. 13      loss: 0.005370850209146738
+batch nb. 14      loss: 0.004998291842639446
+batch nb. 15      loss: 0.004749232437461615
+validation:          Loss: 0.005517322104424238 train loss : 0.007032283581793308
+new best model
+Epoch:  21
+batch nb. 0      loss: 0.005461407825350761
+batch nb. 1      loss: 0.004730882588773966
+batch nb. 2      loss: 0.0042040543630719185
+batch nb. 3      loss: 0.004284985363483429
+batch nb. 4      loss: 0.004508182872086763
+batch nb. 5      loss: 0.004591912496834993
+batch nb. 6      loss: 0.005314519163221121
+batch nb. 7      loss: 0.004893930163234472
+batch nb. 8      loss: 0.005381621886044741
+batch nb. 9      loss: 0.0066403052769601345
+batch nb. 10      loss: 0.0060931844636797905
+batch nb. 11      loss: 0.0069283368065953255
+batch nb. 12      loss: 0.006954590789973736
+batch nb. 13      loss: 0.005263644270598888
+batch nb. 14      loss: 0.004853060934692621
+batch nb. 15      loss: 0.004658335819840431
+validation:          Loss: 0.005397578235715628 train loss : 0.006924377288669348
+new best model
+Epoch:  22
+batch nb. 0      loss: 0.00539391627535224
+batch nb. 1      loss: 0.004641256295144558
+batch nb. 2      loss: 0.004059921484440565
+batch nb. 3      loss: 0.004176619928330183
+batch nb. 4      loss: 0.004449550528079271
+batch nb. 5      loss: 0.004536850843578577
+batch nb. 6      loss: 0.005216512829065323
+batch nb. 7      loss: 0.004823701456189156
+batch nb. 8      loss: 0.005369833204895258
+batch nb. 9      loss: 0.0066528962925076485
+batch nb. 10      loss: 0.0059970952570438385
+batch nb. 11      loss: 0.006812083534896374
+batch nb. 12      loss: 0.0068954420275986195
+batch nb. 13      loss: 0.00523813022300601
+batch nb. 14      loss: 0.004849135875701904
+batch nb. 15      loss: 0.004653577692806721
+validation:          Loss: 0.0054526859894394875 train loss : 0.006825646851211786
+Epoch:  23
+batch nb. 0      loss: 0.005413792096078396
+batch nb. 1      loss: 0.004658329766243696
+batch nb. 2      loss: 0.004079846199601889
+batch nb. 3      loss: 0.004157883580774069
+batch nb. 4      loss: 0.004395690746605396
+batch nb. 5      loss: 0.004507545847445726
+batch nb. 6      loss: 0.005210088100284338
+batch nb. 7      loss: 0.004809959791600704
+batch nb. 8      loss: 0.005317512433975935
+batch nb. 9      loss: 0.006616527214646339
+batch nb. 10      loss: 0.005983801558613777
+batch nb. 11      loss: 0.006779790390282869
+batch nb. 12      loss: 0.006815710105001926
+batch nb. 13      loss: 0.005192216020077467
+batch nb. 14      loss: 0.004820924252271652
+batch nb. 15      loss: 0.004628678783774376
+validation:          Loss: 0.005364927463233471 train loss : 0.006734106689691544
+new best model
+Epoch:  24
+batch nb. 0      loss: 0.00532815745100379
+batch nb. 1      loss: 0.0046068099327385426
+batch nb. 2      loss: 0.0040270304307341576
+batch nb. 3      loss: 0.004095663782209158
+batch nb. 4      loss: 0.004317000973969698
+batch nb. 5      loss: 0.004445978906005621
+batch nb. 6      loss: 0.005129610653966665
+batch nb. 7      loss: 0.004752733279019594
+batch nb. 8      loss: 0.005236259661614895
+batch nb. 9      loss: 0.0065098353661596775
+batch nb. 10      loss: 0.005890578497201204
+batch nb. 11      loss: 0.006729251239448786
+batch nb. 12      loss: 0.0067084613256156445
+batch nb. 13      loss: 0.005080949980765581
+batch nb. 14      loss: 0.004747400060296059
+batch nb. 15      loss: 0.004499940667301416
+validation:          Loss: 0.005280972458422184 train loss : 0.006644740235060453
+new best model
+Epoch:  25
+batch nb. 0      loss: 0.005251607857644558
+batch nb. 1      loss: 0.004500462207943201
+batch nb. 2      loss: 0.00395760266110301
+batch nb. 3      loss: 0.004050069488584995
+batch nb. 4      loss: 0.0042250980623066425
+batch nb. 5      loss: 0.004350471775978804
+batch nb. 6      loss: 0.005037564784288406
+batch nb. 7      loss: 0.004664067644625902
+batch nb. 8      loss: 0.005141113884747028
+batch nb. 9      loss: 0.006404061336070299
+batch nb. 10      loss: 0.005838536657392979
+batch nb. 11      loss: 0.006655495148152113
+batch nb. 12      loss: 0.006638264283537865
+batch nb. 13      loss: 0.004972136579453945
+batch nb. 14      loss: 0.004652284551411867
+batch nb. 15      loss: 0.004434110596776009
+validation:          Loss: 0.005124243907630444 train loss : 0.006559715606272221
+new best model
+Epoch:  26
+batch nb. 0      loss: 0.0050755157135427
+batch nb. 1      loss: 0.004408714827150106
+batch nb. 2      loss: 0.003913138527423143
+batch nb. 3      loss: 0.00402207113802433
+batch nb. 4      loss: 0.004198156297206879
+batch nb. 5      loss: 0.004264783579856157
+batch nb. 6      loss: 0.004939218517392874
+batch nb. 7      loss: 0.004540989641100168
+batch nb. 8      loss: 0.005006244871765375
+batch nb. 9      loss: 0.006275587249547243
+batch nb. 10      loss: 0.005782569758594036
+batch nb. 11      loss: 0.006580614950507879
+batch nb. 12      loss: 0.006574766710400581
+batch nb. 13      loss: 0.004926740191876888
+batch nb. 14      loss: 0.0045807091519236565
+batch nb. 15      loss: 0.004427014850080013
+validation:          Loss: 0.005050119012594223 train loss : 0.006480726879090071
+new best model
+Epoch:  27
+batch nb. 0      loss: 0.004986047279089689
+batch nb. 1      loss: 0.00421152962371707
+batch nb. 2      loss: 0.003749303286895156
+batch nb. 3      loss: 0.00395719800144434
+batch nb. 4      loss: 0.004152256995439529
+batch nb. 5      loss: 0.004204041324555874
+batch nb. 6      loss: 0.004838801920413971
+batch nb. 7      loss: 0.0044814590364694595
+batch nb. 8      loss: 0.005009880755096674
+batch nb. 9      loss: 0.0062348502688109875
+batch nb. 10      loss: 0.005744745954871178
+batch nb. 11      loss: 0.006491347681730986
+batch nb. 12      loss: 0.006515595596283674
+batch nb. 13      loss: 0.0049394783563911915
+batch nb. 14      loss: 0.004579977132380009
+batch nb. 15      loss: 0.004424023907631636
+validation:          Loss: 0.005094241816550493 train loss : 0.006407273001968861
+Epoch:  28
+batch nb. 0      loss: 0.004962916951626539
+batch nb. 1      loss: 0.004321999382227659
+batch nb. 2      loss: 0.0037675760686397552
+batch nb. 3      loss: 0.003919751383364201
+batch nb. 4      loss: 0.004154241178184748
+batch nb. 5      loss: 0.004219207912683487
+batch nb. 6      loss: 0.004793589934706688
+batch nb. 7      loss: 0.004486612975597382
+batch nb. 8      loss: 0.005037196446210146
+batch nb. 9      loss: 0.006180077325552702
+batch nb. 10      loss: 0.005732065998017788
+batch nb. 11      loss: 0.006483354605734348
+batch nb. 12      loss: 0.006455959752202034
+batch nb. 13      loss: 0.00487758032977581
+batch nb. 14      loss: 0.004526105709373951
+batch nb. 15      loss: 0.0043786149471998215
+validation:          Loss: 0.005018447060137987 train loss : 0.006337319500744343
+new best model
+Epoch:  29
+batch nb. 0      loss: 0.0049408357590436935
+batch nb. 1      loss: 0.004251376260071993
+batch nb. 2      loss: 0.0037432382814586163
+batch nb. 3      loss: 0.003872171975672245
+batch nb. 4      loss: 0.004092457704246044
+batch nb. 5      loss: 0.0041811163537204266
+batch nb. 6      loss: 0.004775750916451216
+batch nb. 7      loss: 0.004388943314552307
+batch nb. 8      loss: 0.005003234837204218
+batch nb. 9      loss: 0.006160939112305641
+batch nb. 10      loss: 0.005594531074166298
+batch nb. 11      loss: 0.006401990074664354
+batch nb. 12      loss: 0.006474616471678019
+batch nb. 13      loss: 0.004799703136086464
+batch nb. 14      loss: 0.0044832075946033
+batch nb. 15      loss: 0.004287251271307468
+validation:          Loss: 0.004918577149510384 train loss : 0.006268984172493219
+new best model
+Epoch:  30
+batch nb. 0      loss: 0.004853112157434225
+batch nb. 1      loss: 0.004200206138193607
+batch nb. 2      loss: 0.0036357096396386623
+batch nb. 3      loss: 0.0037703935522586107
+batch nb. 4      loss: 0.004029382020235062
+batch nb. 5      loss: 0.0040893093682825565
+batch nb. 6      loss: 0.004701647441834211
+batch nb. 7      loss: 0.004374779295176268
+batch nb. 8      loss: 0.004971537739038467
+batch nb. 9      loss: 0.006183377001434565
+batch nb. 10      loss: 0.00557539751753211
+batch nb. 11      loss: 0.006276627071201801
+batch nb. 12      loss: 0.006374146323651075
+batch nb. 13      loss: 0.004758827853947878
+batch nb. 14      loss: 0.004493942949920893
+batch nb. 15      loss: 0.00441401032730937
+validation:          Loss: 0.004929578397423029 train loss : 0.006209146231412888
+Epoch:  31
+batch nb. 0      loss: 0.004842640832066536
+batch nb. 1      loss: 0.004205112345516682
+batch nb. 2      loss: 0.003704011905938387
+batch nb. 3      loss: 0.003751336596906185
+batch nb. 4      loss: 0.003989750519394875
+batch nb. 5      loss: 0.0041028461419045925
+batch nb. 6      loss: 0.004699185490608215
+batch nb. 7      loss: 0.004384810570627451
+batch nb. 8      loss: 0.0049662464298307896
+batch nb. 9      loss: 0.006104763131588697
+batch nb. 10      loss: 0.0055834646336734295
+batch nb. 11      loss: 0.006281149107962847
+batch nb. 12      loss: 0.006315375678241253
+batch nb. 13      loss: 0.004725489765405655
+batch nb. 14      loss: 0.004393679089844227
+batch nb. 15      loss: 0.0043194834142923355
+validation:          Loss: 0.0049648592248559 train loss : 0.006150093860924244
+Epoch:  32
+batch nb. 0      loss: 0.004898104351013899
+batch nb. 1      loss: 0.004144329112023115
+batch nb. 2      loss: 0.0036732207518070936
+batch nb. 3      loss: 0.003786528715863824
+batch nb. 4      loss: 0.004016099497675896
+batch nb. 5      loss: 0.004073001444339752
+batch nb. 6      loss: 0.004649726673960686
+batch nb. 7      loss: 0.004326303023844957
+batch nb. 8      loss: 0.00488175917416811
+batch nb. 9      loss: 0.006026922725141048
+batch nb. 10      loss: 0.00552004249766469
+batch nb. 11      loss: 0.006191718857735395
+batch nb. 12      loss: 0.0062672714702785015
+batch nb. 13      loss: 0.004720467142760754
+batch nb. 14      loss: 0.004346237517893314
+batch nb. 15      loss: 0.004242495633661747
+validation:          Loss: 0.004879834596067667 train loss : 0.006092287600040436
+new best model
+Epoch:  33
+batch nb. 0      loss: 0.004823631141334772
+batch nb. 1      loss: 0.004187012556940317
+batch nb. 2      loss: 0.0036875088699162006
+batch nb. 3      loss: 0.003801818937063217
+batch nb. 4      loss: 0.003964269068092108
+batch nb. 5      loss: 0.004120965953916311
+batch nb. 6      loss: 0.004701296798884869
+batch nb. 7      loss: 0.0042765638791024685
+batch nb. 8      loss: 0.004841185174882412
+batch nb. 9      loss: 0.00601442065089941
+batch nb. 10      loss: 0.005488826427608728
+batch nb. 11      loss: 0.0062071033753454685
+batch nb. 12      loss: 0.006200670730322599
+batch nb. 13      loss: 0.004627702757716179
+batch nb. 14      loss: 0.0043576923198997974
+batch nb. 15      loss: 0.004327762871980667
+validation:          Loss: 0.004861526191234589 train loss : 0.0060403901152312756
+new best model
+Epoch:  34
+batch nb. 0      loss: 0.004864390939474106
+batch nb. 1      loss: 0.004122292157262564
+batch nb. 2      loss: 0.0036674889270216227
+batch nb. 3      loss: 0.003773152595385909
+batch nb. 4      loss: 0.003910399507731199
+batch nb. 5      loss: 0.004032545257359743
+batch nb. 6      loss: 0.004651930183172226
+batch nb. 7      loss: 0.004272702615708113
+batch nb. 8      loss: 0.004866440314799547
+batch nb. 9      loss: 0.006041080690920353
+batch nb. 10      loss: 0.005459373351186514
+batch nb. 11      loss: 0.006180560681968927
+batch nb. 12      loss: 0.006164903286844492
+batch nb. 13      loss: 0.00462930416688323
+batch nb. 14      loss: 0.004293074831366539
+batch nb. 15      loss: 0.004291026387363672
+validation:          Loss: 0.004953472875058651 train loss : 0.005990408360958099
+Epoch:  35
+batch nb. 0      loss: 0.004895645659416914
+batch nb. 1      loss: 0.004115359857678413
+batch nb. 2      loss: 0.003645988879725337
+batch nb. 3      loss: 0.0037113225553184748
+batch nb. 4      loss: 0.0039003901183605194
+batch nb. 5      loss: 0.00400477135553956
+batch nb. 6      loss: 0.004589979536831379
+batch nb. 7      loss: 0.004216175526380539
+batch nb. 8      loss: 0.004762634634971619
+batch nb. 9      loss: 0.0059770760126411915
+batch nb. 10      loss: 0.005434478633105755
+batch nb. 11      loss: 0.006096040364354849
+batch nb. 12      loss: 0.006137790624052286
+batch nb. 13      loss: 0.004596452694386244
+batch nb. 14      loss: 0.004271116107702255
+batch nb. 15      loss: 0.00424271309748292
+validation:          Loss: 0.0047928341664373875 train loss : 0.005941861309111118
+new best model
+Epoch:  36
+batch nb. 0      loss: 0.004745100624859333
+batch nb. 1      loss: 0.004093522671610117
+batch nb. 2      loss: 0.00363266677595675
+batch nb. 3      loss: 0.0036860292311757803
+batch nb. 4      loss: 0.0038828488904982805
+batch nb. 5      loss: 0.00399219524115324
+batch nb. 6      loss: 0.004557618405669928
+batch nb. 7      loss: 0.004200841765850782
+batch nb. 8      loss: 0.00475789699703455
+batch nb. 9      loss: 0.005896746646612883
+batch nb. 10      loss: 0.005401273258030415
+batch nb. 11      loss: 0.006111383903771639
+batch nb. 12      loss: 0.006075304001569748
+batch nb. 13      loss: 0.004549009259790182
+batch nb. 14      loss: 0.0042426697909832
+batch nb. 15      loss: 0.004147445783019066
+validation:          Loss: 0.0047704740427434444 train loss : 0.005893363151699305
+new best model
+Epoch:  37
+batch nb. 0      loss: 0.004729399923235178
+batch nb. 1      loss: 0.00403842655941844
+batch nb. 2      loss: 0.0035235690884292126
+batch nb. 3      loss: 0.003655016887933016
+batch nb. 4      loss: 0.0038508560974150896
+batch nb. 5      loss: 0.0038346070796251297
+batch nb. 6      loss: 0.004423145204782486
+batch nb. 7      loss: 0.00416217278689146
+batch nb. 8      loss: 0.004773569293320179
+batch nb. 9      loss: 0.005876679439097643
+batch nb. 10      loss: 0.005348830483853817
+batch nb. 11      loss: 0.006071445532143116
+batch nb. 12      loss: 0.006057871039956808
+batch nb. 13      loss: 0.004593174438923597
+batch nb. 14      loss: 0.004210367798805237
+batch nb. 15      loss: 0.004111068788915873
+validation:          Loss: 0.004708717577159405 train loss : 0.0058464608155190945
+new best model
+Epoch:  38
+batch nb. 0      loss: 0.004578007385134697
+batch nb. 1      loss: 0.003974806517362595
+batch nb. 2      loss: 0.003545224666595459
+batch nb. 3      loss: 0.003648757701739669
+batch nb. 4      loss: 0.0038673775270581245
+batch nb. 5      loss: 0.003857932984828949
+batch nb. 6      loss: 0.004366571549326181
+batch nb. 7      loss: 0.004086468834429979
+batch nb. 8      loss: 0.004716203082352877
+batch nb. 9      loss: 0.00585594167932868
+batch nb. 10      loss: 0.005310419946908951
+batch nb. 11      loss: 0.0059988973662257195
+batch nb. 12      loss: 0.0060435812920331955
+batch nb. 13      loss: 0.00445537781342864
+batch nb. 14      loss: 0.004171279259026051
+batch nb. 15      loss: 0.004112730734050274
+validation:          Loss: 0.004659693688154221 train loss : 0.005802006460726261
+new best model
+Epoch:  39
+batch nb. 0      loss: 0.004591943230479956
+batch nb. 1      loss: 0.003915685229003429
+batch nb. 2      loss: 0.0034969181288033724
+batch nb. 3      loss: 0.003594992682337761
+batch nb. 4      loss: 0.0038064473774284124
+batch nb. 5      loss: 0.0038489876314997673
+batch nb. 6      loss: 0.004373500123620033
+batch nb. 7      loss: 0.00404260354116559
+batch nb. 8      loss: 0.004634778946638107
+batch nb. 9      loss: 0.0058035580441355705
+batch nb. 10      loss: 0.005261845886707306
+batch nb. 11      loss: 0.005884262267500162
+batch nb. 12      loss: 0.005962250754237175
+batch nb. 13      loss: 0.004423828795552254
+batch nb. 14      loss: 0.004153917543590069
+batch nb. 15      loss: 0.004128183703869581
+validation:          Loss: 0.004642379470169544 train loss : 0.005760160740464926
+new best model
+Epoch:  40
+batch nb. 0      loss: 0.004602557048201561
+batch nb. 1      loss: 0.0038878133054822683
+batch nb. 2      loss: 0.0034452970139682293
+batch nb. 3      loss: 0.003608579048886895
+batch nb. 4      loss: 0.003830250119790435
+batch nb. 5      loss: 0.0038789391983300447
+batch nb. 6      loss: 0.004381868988275528
+batch nb. 7      loss: 0.0040181358344852924
+batch nb. 8      loss: 0.004569450858980417
+batch nb. 9      loss: 0.005754216108471155
+batch nb. 10      loss: 0.005252111237496138
+batch nb. 11      loss: 0.005888802465051413
+batch nb. 12      loss: 0.005896673072129488
+batch nb. 13      loss: 0.004427258390933275
+batch nb. 14      loss: 0.004151785746216774
+batch nb. 15      loss: 0.004197815898805857
+validation:          Loss: 0.004688691347837448 train loss : 0.005722055211663246
+Epoch:  41
+batch nb. 0      loss: 0.004671463742852211
+batch nb. 1      loss: 0.0038746288046240807
+batch nb. 2      loss: 0.003421350382268429
+batch nb. 3      loss: 0.003561131889000535
+batch nb. 4      loss: 0.003804160514846444
+batch nb. 5      loss: 0.0038851730059832335
+batch nb. 6      loss: 0.0044014169834554195
+batch nb. 7      loss: 0.0040618353523314
+batch nb. 8      loss: 0.004613775294274092
+batch nb. 9      loss: 0.005760221276432276
+batch nb. 10      loss: 0.005281345918774605
+batch nb. 11      loss: 0.005877786315977573
+batch nb. 12      loss: 0.005856696981936693
+batch nb. 13      loss: 0.004348904360085726
+batch nb. 14      loss: 0.004087409935891628
+batch nb. 15      loss: 0.0041442918591201305
+validation:          Loss: 0.004705579951405525 train loss : 0.005684489384293556
+Epoch:  42
+batch nb. 0      loss: 0.004661109764128923
+batch nb. 1      loss: 0.003939797170460224
+batch nb. 2      loss: 0.003397769760340452
+batch nb. 3      loss: 0.0035194354131817818
+batch nb. 4      loss: 0.003747259033843875
+batch nb. 5      loss: 0.0037944838404655457
+batch nb. 6      loss: 0.004335024859756231
+batch nb. 7      loss: 0.004038140177726746
+batch nb. 8      loss: 0.004664374515414238
+batch nb. 9      loss: 0.005757075268775225
+batch nb. 10      loss: 0.0052355993539094925
+batch nb. 11      loss: 0.0058647459372878075
+batch nb. 12      loss: 0.0058952863328158855
+batch nb. 13      loss: 0.004368916619569063
+batch nb. 14      loss: 0.004078466910868883
+batch nb. 15      loss: 0.004076111130416393
+validation:          Loss: 0.00466301292181015 train loss : 0.005647085141390562
+Epoch:  43
+batch nb. 0      loss: 0.004634522367268801
+batch nb. 1      loss: 0.003956140018999577
+batch nb. 2      loss: 0.0034400199074298143
+batch nb. 3      loss: 0.003528262721374631
+batch nb. 4      loss: 0.00374523364007473
+batch nb. 5      loss: 0.003865674836561084
+batch nb. 6      loss: 0.004350658971816301
+batch nb. 7      loss: 0.00403249217197299
+batch nb. 8      loss: 0.0047013466246426105
+batch nb. 9      loss: 0.005829336121678352
+batch nb. 10      loss: 0.005194406025111675
+batch nb. 11      loss: 0.0058086710050702095
+batch nb. 12      loss: 0.0058923810720443726
+batch nb. 13      loss: 0.004382550250738859
+batch nb. 14      loss: 0.0041149817407131195
+batch nb. 15      loss: 0.004149540327489376
+validation:          Loss: 0.004630205687135458 train loss : 0.005613049957901239
+new best model
+Epoch:  44
+batch nb. 0      loss: 0.004666999448090792
+batch nb. 1      loss: 0.003942089155316353
+batch nb. 2      loss: 0.003451813943684101
+batch nb. 3      loss: 0.0035318806767463684
+batch nb. 4      loss: 0.00369568751193583
+batch nb. 5      loss: 0.003836465999484062
+batch nb. 6      loss: 0.004356995224952698
+batch nb. 7      loss: 0.004046599380671978
+batch nb. 8      loss: 0.0047242953442037106
+batch nb. 9      loss: 0.005794825032353401
+batch nb. 10      loss: 0.005227950401604176
+batch nb. 11      loss: 0.005885257385671139
+batch nb. 12      loss: 0.00583520857617259
+batch nb. 13      loss: 0.0043644532561302185
+batch nb. 14      loss: 0.004064209759235382
+batch nb. 15      loss: 0.004140171688050032
+validation:          Loss: 0.0046999393962323666 train loss : 0.005580319091677666
+Epoch:  45
+batch nb. 0      loss: 0.004652262665331364
+batch nb. 1      loss: 0.00394436763599515
+batch nb. 2      loss: 0.003407600335776806
+batch nb. 3      loss: 0.003487071953713894
+batch nb. 4      loss: 0.0036959731951355934
+batch nb. 5      loss: 0.003779852529987693
+batch nb. 6      loss: 0.004344205837696791
+batch nb. 7      loss: 0.004042079672217369
+batch nb. 8      loss: 0.004691058304160833
+batch nb. 9      loss: 0.0057850368320941925
+batch nb. 10      loss: 0.005219279322773218
+batch nb. 11      loss: 0.005875040777027607
+batch nb. 12      loss: 0.005931057967245579
+batch nb. 13      loss: 0.004375117365270853
+batch nb. 14      loss: 0.0040947743691504
+batch nb. 15      loss: 0.00405451375991106
+validation:          Loss: 0.004576635546982288 train loss : 0.005547149572521448
+new best model
+Epoch:  46
+batch nb. 0      loss: 0.004510317929089069
+batch nb. 1      loss: 0.0037979776971042156
+batch nb. 2      loss: 0.0033704889938235283
+batch nb. 3      loss: 0.003438229439780116
+batch nb. 4      loss: 0.003655575215816498
+batch nb. 5      loss: 0.0037335038650780916
+batch nb. 6      loss: 0.004283795598894358
+batch nb. 7      loss: 0.003951942548155785
+batch nb. 8      loss: 0.004593323916196823
+batch nb. 9      loss: 0.005716141778975725
+batch nb. 10      loss: 0.005137795582413673
+batch nb. 11      loss: 0.005846318788826466
+batch nb. 12      loss: 0.005837941076606512
+batch nb. 13      loss: 0.004357486963272095
+batch nb. 14      loss: 0.004047021269798279
+batch nb. 15      loss: 0.004047180525958538
+validation:          Loss: 0.0046754078939557076 train loss : 0.005515235476195812
+Epoch:  47
+batch nb. 0      loss: 0.004604985937476158
+batch nb. 1      loss: 0.003873794572427869
+batch nb. 2      loss: 0.0033726058900356293
+batch nb. 3      loss: 0.0034928759559988976
+batch nb. 4      loss: 0.0037025471683591604
+batch nb. 5      loss: 0.0037684522103518248
+batch nb. 6      loss: 0.00436586607247591
+batch nb. 7      loss: 0.003980346955358982
+batch nb. 8      loss: 0.0045802961103618145
+batch nb. 9      loss: 0.00569156464189291
+batch nb. 10      loss: 0.005096666514873505
+batch nb. 11      loss: 0.0057868678122758865
+batch nb. 12      loss: 0.005794620141386986
+batch nb. 13      loss: 0.004278801381587982
+batch nb. 14      loss: 0.003994081635028124
+batch nb. 15      loss: 0.003975547384470701
+validation:          Loss: 0.004603471606969833 train loss : 0.005483158398419619
+Epoch:  48
+batch nb. 0      loss: 0.004465366713702679
+batch nb. 1      loss: 0.003866933984681964
+batch nb. 2      loss: 0.0033667946700006723
+batch nb. 3      loss: 0.003411791520193219
+batch nb. 4      loss: 0.0036589952651411295
+batch nb. 5      loss: 0.003709646873176098
+batch nb. 6      loss: 0.004221481271088123
+batch nb. 7      loss: 0.003914453089237213
+batch nb. 8      loss: 0.004499201662838459
+batch nb. 9      loss: 0.00561688793823123
+batch nb. 10      loss: 0.005078027490526438
+batch nb. 11      loss: 0.005688461009413004
+batch nb. 12      loss: 0.005703904200345278
+batch nb. 13      loss: 0.0042367372661828995
+batch nb. 14      loss: 0.003940201364457607
+batch nb. 15      loss: 0.003972713369876146
+validation:          Loss: 0.004563864786177874 train loss : 0.005452333018183708
+new best model
+Epoch:  49
+batch nb. 0      loss: 0.00443801237270236
+batch nb. 1      loss: 0.0038473038002848625
+batch nb. 2      loss: 0.0033501258585602045
+batch nb. 3      loss: 0.003396740648895502
+batch nb. 4      loss: 0.0036603782791644335
+batch nb. 5      loss: 0.003717163810506463
+batch nb. 6      loss: 0.00420430488884449
+batch nb. 7      loss: 0.003897553775459528
+batch nb. 8      loss: 0.004478983581066132
+batch nb. 9      loss: 0.0055504487827420235
+batch nb. 10      loss: 0.005043806973844767
+batch nb. 11      loss: 0.005699956323951483
+batch nb. 12      loss: 0.005704803392291069
+batch nb. 13      loss: 0.004226431716233492
+batch nb. 14      loss: 0.0039215837605297565
+batch nb. 15      loss: 0.003978630993515253
+validation:          Loss: 0.004580771084874868 train loss : 0.005422858987003565
+Epoch:  50
+batch nb. 0      loss: 0.004492454696446657
+batch nb. 1      loss: 0.003816191339865327
+batch nb. 2      loss: 0.0032953398767858744
+batch nb. 3      loss: 0.0033833691850304604
+batch nb. 4      loss: 0.0035965535789728165
+batch nb. 5      loss: 0.0036539307329803705
+batch nb. 6      loss: 0.004187095444649458
+batch nb. 7      loss: 0.003862404264509678
+batch nb. 8      loss: 0.004429968539625406
+batch nb. 9      loss: 0.005490139126777649
+batch nb. 10      loss: 0.005006314255297184
+batch nb. 11      loss: 0.005663239397108555
+batch nb. 12      loss: 0.0056609041057527065
+batch nb. 13      loss: 0.004202993120998144
+batch nb. 14      loss: 0.0038903544191271067
+batch nb. 15      loss: 0.003901661606505513
+validation:          Loss: 0.004506959579885006 train loss : 0.005393031984567642
+new best model
+Epoch:  51
+batch nb. 0      loss: 0.004375149495899677
+batch nb. 1      loss: 0.003776590572670102
+batch nb. 2      loss: 0.003302436787635088
+batch nb. 3      loss: 0.0033567689824849367
+batch nb. 4      loss: 0.0035647358745336533
+batch nb. 5      loss: 0.00364483380690217
+batch nb. 6      loss: 0.00416912604123354
+batch nb. 7      loss: 0.0038284168113023043
+batch nb. 8      loss: 0.004412708338350058
+batch nb. 9      loss: 0.005483238957822323
+batch nb. 10      loss: 0.005004603415727615
+batch nb. 11      loss: 0.00562003580853343
+batch nb. 12      loss: 0.005654456093907356
+batch nb. 13      loss: 0.0041922926902771
+batch nb. 14      loss: 0.003907504491508007
+batch nb. 15      loss: 0.003919642418622971
+validation:          Loss: 0.004444061312824488 train loss : 0.005364696960896254
+new best model
+Epoch:  52
+batch nb. 0      loss: 0.0043783001601696014
+batch nb. 1      loss: 0.0037240847013890743
+batch nb. 2      loss: 0.003299976699054241
+batch nb. 3      loss: 0.0033674684818834066
+batch nb. 4      loss: 0.0035686553455889225
+batch nb. 5      loss: 0.0037147037219256163
+batch nb. 6      loss: 0.004253489896655083
+batch nb. 7      loss: 0.003878232790157199
+batch nb. 8      loss: 0.004397541284561157
+batch nb. 9      loss: 0.005457216873764992
+batch nb. 10      loss: 0.004998567048460245
+batch nb. 11      loss: 0.005581065081059933
+batch nb. 12      loss: 0.005648766178637743
+batch nb. 13      loss: 0.004128157161176205
+batch nb. 14      loss: 0.0038493580650538206
+batch nb. 15      loss: 0.0038547469303011894
+validation:          Loss: 0.004443783778697252 train loss : 0.005336207803338766
+new best model
+Epoch:  53
+batch nb. 0      loss: 0.00440290616825223
+batch nb. 1      loss: 0.003706116694957018
+batch nb. 2      loss: 0.003287944244220853
+batch nb. 3      loss: 0.003303174627944827
+batch nb. 4      loss: 0.0035195157397538424
+batch nb. 5      loss: 0.003619336523115635
+batch nb. 6      loss: 0.00416262773796916
+batch nb. 7      loss: 0.003854163456708193
+batch nb. 8      loss: 0.004366763401776552
+batch nb. 9      loss: 0.005413728300482035
+batch nb. 10      loss: 0.004961429629474878
+batch nb. 11      loss: 0.005583037622272968
+batch nb. 12      loss: 0.005576643161475658
+batch nb. 13      loss: 0.004101866390556097
+batch nb. 14      loss: 0.003810099558904767
+batch nb. 15      loss: 0.003743409179151058
+validation:          Loss: 0.004403518512845039 train loss : 0.005306711420416832
+new best model
+Epoch:  54
+batch nb. 0      loss: 0.004294616635888815
+batch nb. 1      loss: 0.0036374758929014206
+batch nb. 2      loss: 0.003284047357738018
+batch nb. 3      loss: 0.003314340952783823
+batch nb. 4      loss: 0.003488125279545784
+batch nb. 5      loss: 0.003542973892763257
+batch nb. 6      loss: 0.00403671944513917
+batch nb. 7      loss: 0.0037599527277052402
+batch nb. 8      loss: 0.004330629017204046
+batch nb. 9      loss: 0.005377055145800114
+batch nb. 10      loss: 0.004909926559776068
+batch nb. 11      loss: 0.00555210979655385
+batch nb. 12      loss: 0.005581303033977747
+batch nb. 13      loss: 0.004083166364580393
+batch nb. 14      loss: 0.003748664166778326
+batch nb. 15      loss: 0.003717011073604226
+validation:          Loss: 0.0042793648317456245 train loss : 0.005277807824313641
+new best model
+Epoch:  55
+batch nb. 0      loss: 0.004142419900745153
+batch nb. 1      loss: 0.003535004099830985
+batch nb. 2      loss: 0.00317954970523715
+batch nb. 3      loss: 0.0032277307473123074
+batch nb. 4      loss: 0.0034097793977707624
+batch nb. 5      loss: 0.003439074382185936
+batch nb. 6      loss: 0.0039174179546535015
+batch nb. 7      loss: 0.003672060091048479
+batch nb. 8      loss: 0.004238904919475317
+batch nb. 9      loss: 0.005345250479876995
+batch nb. 10      loss: 0.004886285401880741
+batch nb. 11      loss: 0.00542660616338253
+batch nb. 12      loss: 0.005481768865138292
+batch nb. 13      loss: 0.004072978626936674
+batch nb. 14      loss: 0.0037335313390940428
+batch nb. 15      loss: 0.0037122147623449564
+validation:          Loss: 0.004206485580652952 train loss : 0.0052498504519462585
+new best model
+Epoch:  56
+batch nb. 0      loss: 0.004101600032299757
+batch nb. 1      loss: 0.0035838927142322063
+batch nb. 2      loss: 0.0031969482079148293
+batch nb. 3      loss: 0.003211134346202016
+batch nb. 4      loss: 0.0034322859719395638
+batch nb. 5      loss: 0.003455665661022067
+batch nb. 6      loss: 0.003931804094463587
+batch nb. 7      loss: 0.003652809653431177
+batch nb. 8      loss: 0.0041974191553890705
+batch nb. 9      loss: 0.005310974549502134
+batch nb. 10      loss: 0.004860558081418276
+batch nb. 11      loss: 0.00549254659563303
+batch nb. 12      loss: 0.005476740654557943
+batch nb. 13      loss: 0.004008169285953045
+batch nb. 14      loss: 0.0037323911674320698
+batch nb. 15      loss: 0.0037508767563849688
+validation:          Loss: 0.004218563437461853 train loss : 0.005223552696406841
+Epoch:  57
+batch nb. 0      loss: 0.004110748879611492
+batch nb. 1      loss: 0.0034642876125872135
+batch nb. 2      loss: 0.003109005279839039
+batch nb. 3      loss: 0.0032204280141741037
+batch nb. 4      loss: 0.0033784375991672277
+batch nb. 5      loss: 0.003437886480242014
+batch nb. 6      loss: 0.003904846729710698
+batch nb. 7      loss: 0.003645342541858554
+batch nb. 8      loss: 0.0042434390634298325
+batch nb. 9      loss: 0.005269969347864389
+batch nb. 10      loss: 0.004848165437579155
+batch nb. 11      loss: 0.005447862669825554
+batch nb. 12      loss: 0.005481151398271322
+batch nb. 13      loss: 0.004058039281517267
+batch nb. 14      loss: 0.003720576874911785
+batch nb. 15      loss: 0.0037180189974606037
+validation:          Loss: 0.004226106684654951 train loss : 0.005197595339268446
+Epoch:  58
+batch nb. 0      loss: 0.004139212425798178
+batch nb. 1      loss: 0.003517728066071868
+batch nb. 2      loss: 0.003101089969277382
+batch nb. 3      loss: 0.003179625142365694
+batch nb. 4      loss: 0.003402551170438528
+batch nb. 5      loss: 0.003452664939686656
+batch nb. 6      loss: 0.003937981091439724
+batch nb. 7      loss: 0.0036460969131439924
+batch nb. 8      loss: 0.004189123399555683
+batch nb. 9      loss: 0.005249750334769487
+batch nb. 10      loss: 0.004776689689606428
+batch nb. 11      loss: 0.0053668576292693615
+batch nb. 12      loss: 0.005410542245954275
+batch nb. 13      loss: 0.004056510515511036
+batch nb. 14      loss: 0.003758232109248638
+batch nb. 15      loss: 0.0038088925648480654
+validation:          Loss: 0.004258665256202221 train loss : 0.005174058023840189
+Epoch:  59
+batch nb. 0      loss: 0.0041884067468345165
+batch nb. 1      loss: 0.0034939423203468323
+batch nb. 2      loss: 0.0030862176790833473
+batch nb. 3      loss: 0.003215986071154475
+batch nb. 4      loss: 0.0034393768291920424
+batch nb. 5      loss: 0.0034631737507879734
+batch nb. 6      loss: 0.003946842160075903
+batch nb. 7      loss: 0.003685964038595557
+batch nb. 8      loss: 0.004269038327038288
+batch nb. 9      loss: 0.0052925581112504005
+batch nb. 10      loss: 0.004817423410713673
+batch nb. 11      loss: 0.005416847299784422
+batch nb. 12      loss: 0.005399385001510382
+batch nb. 13      loss: 0.004112267401069403
+batch nb. 14      loss: 0.003835310460999608
+batch nb. 15      loss: 0.0038586941082030535
+validation:          Loss: 0.004332563374191523 train loss : 0.005152135156095028
+Epoch:  60
+batch nb. 0      loss: 0.0042853462509810925
+batch nb. 1      loss: 0.003593634581193328
+batch nb. 2      loss: 0.0031134956516325474
+batch nb. 3      loss: 0.0032318318262696266
+batch nb. 4      loss: 0.0034748909529298544
+batch nb. 5      loss: 0.003484835149720311
+batch nb. 6      loss: 0.003985544200986624
+batch nb. 7      loss: 0.003730841912329197
+batch nb. 8      loss: 0.00435582734644413
+batch nb. 9      loss: 0.005363786593079567
+batch nb. 10      loss: 0.004869735799729824
+batch nb. 11      loss: 0.0054830885492265224
+batch nb. 12      loss: 0.00545765645802021
+batch nb. 13      loss: 0.00411228695884347
+batch nb. 14      loss: 0.0038641812279820442
+batch nb. 15      loss: 0.003920711111277342
+validation:          Loss: 0.004440515302121639 train loss : 0.005131947807967663
+Epoch:  61
+batch nb. 0      loss: 0.00439152168110013
+batch nb. 1      loss: 0.0037270081229507923
+batch nb. 2      loss: 0.0032190619967877865
+batch nb. 3      loss: 0.0032857987098395824
+batch nb. 4      loss: 0.0035433145239949226
+batch nb. 5      loss: 0.003562930040061474
+batch nb. 6      loss: 0.004055667668581009
+batch nb. 7      loss: 0.0037675451021641493
+batch nb. 8      loss: 0.004446930717676878
+batch nb. 9      loss: 0.005442663095891476
+batch nb. 10      loss: 0.0049179717898368835
+batch nb. 11      loss: 0.005588101223111153
+batch nb. 12      loss: 0.0055128284730017185
+batch nb. 13      loss: 0.004199828486889601
+batch nb. 14      loss: 0.003917551599442959
+batch nb. 15      loss: 0.004020397085696459
+validation:          Loss: 0.004588691983371973 train loss : 0.0051140193827450275
+Epoch:  62
+batch nb. 0      loss: 0.004473348148167133
+batch nb. 1      loss: 0.0038772455882281065
+batch nb. 2      loss: 0.0034227906726300716
+batch nb. 3      loss: 0.003388483775779605
+batch nb. 4      loss: 0.003600337076932192
+batch nb. 5      loss: 0.003633718006312847
+batch nb. 6      loss: 0.004133500624448061
+batch nb. 7      loss: 0.0038392236456274986
+batch nb. 8      loss: 0.004559681285172701
+batch nb. 9      loss: 0.005599216092377901
+batch nb. 10      loss: 0.0049592736177146435
+batch nb. 11      loss: 0.0056217084638774395
+batch nb. 12      loss: 0.005648289807140827
+batch nb. 13      loss: 0.004149983637034893
+batch nb. 14      loss: 0.003924334887415171
+batch nb. 15      loss: 0.004103169776499271
+validation:          Loss: 0.004626709036529064 train loss : 0.005097974557429552
+Epoch:  63
+batch nb. 0      loss: 0.004562801215797663
+batch nb. 1      loss: 0.0038240510039031506
+batch nb. 2      loss: 0.003473958233371377
+batch nb. 3      loss: 0.003477649763226509
+batch nb. 4      loss: 0.003621899988502264
+batch nb. 5      loss: 0.0036626493092626333
+batch nb. 6      loss: 0.0041433232836425304
+batch nb. 7      loss: 0.003821877297013998
+batch nb. 8      loss: 0.00440371735021472
+batch nb. 9      loss: 0.005546814762055874
+batch nb. 10      loss: 0.004955882206559181
+batch nb. 11      loss: 0.005593434441834688
+batch nb. 12      loss: 0.005562826059758663
+batch nb. 13      loss: 0.004181227181106806
+batch nb. 14      loss: 0.003914420027285814
+batch nb. 15      loss: 0.004086509346961975
+validation:          Loss: 0.004618516191840172 train loss : 0.005082170478999615
+Epoch:  64
+batch nb. 0      loss: 0.0045538065023720264
+batch nb. 1      loss: 0.00374624808318913
+batch nb. 2      loss: 0.0033474473748356104
+batch nb. 3      loss: 0.003431065008044243
+batch nb. 4      loss: 0.003603407647460699
+batch nb. 5      loss: 0.0035895833279937506
+batch nb. 6      loss: 0.004067489877343178
+batch nb. 7      loss: 0.003848055377602577
+batch nb. 8      loss: 0.004525736439973116
+batch nb. 9      loss: 0.005526136606931686
+batch nb. 10      loss: 0.00499963341280818
+batch nb. 11      loss: 0.0055678049102425575
+batch nb. 12      loss: 0.005572003312408924
+batch nb. 13      loss: 0.0040958113968372345
+batch nb. 14      loss: 0.003818739205598831
+batch nb. 15      loss: 0.003871686290949583
+validation:          Loss: 0.004488029051572084 train loss : 0.005063547752797604
+Epoch:  65
+batch nb. 0      loss: 0.00441913865506649
+batch nb. 1      loss: 0.0038126984145492315
+batch nb. 2      loss: 0.0033091751392930746
+batch nb. 3      loss: 0.0033590809907764196
+batch nb. 4      loss: 0.003488865215331316
+batch nb. 5      loss: 0.003496250370517373
+batch nb. 6      loss: 0.004044190049171448
+batch nb. 7      loss: 0.0037483074702322483
+batch nb. 8      loss: 0.004409703891724348
+batch nb. 9      loss: 0.005405025091022253
+batch nb. 10      loss: 0.004902269691228867
+batch nb. 11      loss: 0.005547420121729374
+batch nb. 12      loss: 0.0055562155321240425
+batch nb. 13      loss: 0.004186788573861122
+batch nb. 14      loss: 0.0037805396132171154
+batch nb. 15      loss: 0.0038167526945471764
+validation:          Loss: 0.004364927299320698 train loss : 0.005044656805694103
+Epoch:  66
+batch nb. 0      loss: 0.004238803405314684
+batch nb. 1      loss: 0.0036393345799297094
+batch nb. 2      loss: 0.0032464778050780296
+batch nb. 3      loss: 0.003283158177509904
+batch nb. 4      loss: 0.0035480293445289135
+batch nb. 5      loss: 0.0035540894605219364
+batch nb. 6      loss: 0.003981456626206636
+batch nb. 7      loss: 0.003704648930579424
+batch nb. 8      loss: 0.0043570795096457005
+batch nb. 9      loss: 0.005376745015382767
+batch nb. 10      loss: 0.004850267898291349
+batch nb. 11      loss: 0.0054359459318220615
+batch nb. 12      loss: 0.005493765696883202
+batch nb. 13      loss: 0.004108088556677103
+batch nb. 14      loss: 0.003778021549805999
+batch nb. 15      loss: 0.003947733901441097
+validation:          Loss: 0.004370392300188541 train loss : 0.0050282846204936504
+Epoch:  67
+batch nb. 0      loss: 0.0043759336695075035
+batch nb. 1      loss: 0.0036268250551074743
+batch nb. 2      loss: 0.00315793021582067
+batch nb. 3      loss: 0.0032373403664678335
+batch nb. 4      loss: 0.00345138693228364
+batch nb. 5      loss: 0.003475402481853962
+batch nb. 6      loss: 0.0039708237163722515
+batch nb. 7      loss: 0.0036663634236902
+batch nb. 8      loss: 0.004193062894046307
+batch nb. 9      loss: 0.005251169670373201
+batch nb. 10      loss: 0.00476487074047327
+batch nb. 11      loss: 0.005412301514297724
+batch nb. 12      loss: 0.005379874724894762
+batch nb. 13      loss: 0.0040145330131053925
+batch nb. 14      loss: 0.0037192576564848423
+batch nb. 15      loss: 0.003764868713915348
+validation:          Loss: 0.004237230867147446 train loss : 0.005009705200791359
+Epoch:  68
+batch nb. 0      loss: 0.0042190710082650185
+batch nb. 1      loss: 0.003549662185832858
+batch nb. 2      loss: 0.0032033445313572884
+batch nb. 3      loss: 0.0031915013678371906
+batch nb. 4      loss: 0.003378739347681403
+batch nb. 5      loss: 0.003421689849346876
+batch nb. 6      loss: 0.003907021135091782
+batch nb. 7      loss: 0.0036163621116429567
+batch nb. 8      loss: 0.00415727449581027
+batch nb. 9      loss: 0.005213686730712652
+batch nb. 10      loss: 0.004742607474327087
+batch nb. 11      loss: 0.005320769734680653
+batch nb. 12      loss: 0.005338104907423258
+batch nb. 13      loss: 0.003954391460865736
+batch nb. 14      loss: 0.0037058365996927023
+batch nb. 15      loss: 0.003723462577909231
+validation:          Loss: 0.0041175526566803455 train loss : 0.0049910638481378555
+new best model
+Epoch:  69
+batch nb. 0      loss: 0.004077402409166098
+batch nb. 1      loss: 0.0034751698840409517
+batch nb. 2      loss: 0.0030890151392668486
+batch nb. 3      loss: 0.00315906316973269
+batch nb. 4      loss: 0.0033370719756931067
+batch nb. 5      loss: 0.0033665813971310854
+batch nb. 6      loss: 0.003836982185021043
+batch nb. 7      loss: 0.0035892834421247244
+batch nb. 8      loss: 0.004144060891121626
+batch nb. 9      loss: 0.005172212142497301
+batch nb. 10      loss: 0.004686676897108555
+batch nb. 11      loss: 0.005271371454000473
+batch nb. 12      loss: 0.0052960459142923355
+batch nb. 13      loss: 0.003914392553269863
+batch nb. 14      loss: 0.003653107210993767
+batch nb. 15      loss: 0.0036782308015972376
+validation:          Loss: 0.004124931991100311 train loss : 0.004972309339791536
+Epoch:  70
+batch nb. 0      loss: 0.004124920815229416
+batch nb. 1      loss: 0.003420384833589196
+batch nb. 2      loss: 0.003022101242095232
+batch nb. 3      loss: 0.0031064399518072605
+batch nb. 4      loss: 0.0033312304876744747
+batch nb. 5      loss: 0.0033826802391558886
+batch nb. 6      loss: 0.00384880811907351
+batch nb. 7      loss: 0.003566224593669176
+batch nb. 8      loss: 0.00417006341740489
+batch nb. 9      loss: 0.0052381535060703754
+batch nb. 10      loss: 0.00466696685180068
+batch nb. 11      loss: 0.0052308859303593636
+batch nb. 12      loss: 0.005308339837938547
+batch nb. 13      loss: 0.003905009012669325
+batch nb. 14      loss: 0.003654747037217021
+batch nb. 15      loss: 0.003791386727243662
+validation:          Loss: 0.004255794920027256 train loss : 0.0049556768499314785
+Epoch:  71
+batch nb. 0      loss: 0.004268270451575518
+batch nb. 1      loss: 0.0035090616438537836
+batch nb. 2      loss: 0.003033599117770791
+batch nb. 3      loss: 0.0030987474601715803
+batch nb. 4      loss: 0.003299020929262042
+batch nb. 5      loss: 0.003360480535775423
+batch nb. 6      loss: 0.0038876135367900133
+batch nb. 7      loss: 0.003614369546994567
+batch nb. 8      loss: 0.00417569512501359
+batch nb. 9      loss: 0.005225015804171562
+batch nb. 10      loss: 0.004672624636441469
+batch nb. 11      loss: 0.005313101690262556
+batch nb. 12      loss: 0.005285715218633413
+batch nb. 13      loss: 0.00387024343945086
+batch nb. 14      loss: 0.003622385673224926
+batch nb. 15      loss: 0.0037146976683288813
+validation:          Loss: 0.004297749605029821 train loss : 0.00493844086304307
+Epoch:  72
+batch nb. 0      loss: 0.004174249246716499
+batch nb. 1      loss: 0.003562959609553218
+batch nb. 2      loss: 0.0030987572390586138
+batch nb. 3      loss: 0.0031034990679472685
+batch nb. 4      loss: 0.0032874636817723513
+batch nb. 5      loss: 0.003351390827447176
+batch nb. 6      loss: 0.003861269447952509
+batch nb. 7      loss: 0.0035950453020632267
+batch nb. 8      loss: 0.004109467379748821
+batch nb. 9      loss: 0.005117116961628199
+batch nb. 10      loss: 0.00466872425749898
+batch nb. 11      loss: 0.005324165802448988
+batch nb. 12      loss: 0.0052787079475820065
+batch nb. 13      loss: 0.0038682653103023767
+batch nb. 14      loss: 0.0036359112709760666
+batch nb. 15      loss: 0.003657066496089101
+validation:          Loss: 0.004205989185720682 train loss : 0.004920888226479292
+Epoch:  73
+batch nb. 0      loss: 0.0040339939296245575
+batch nb. 1      loss: 0.0034559175837785006
+batch nb. 2      loss: 0.003073319559916854
+batch nb. 3      loss: 0.003129383781924844
+batch nb. 4      loss: 0.003288052510470152
+batch nb. 5      loss: 0.0033286423422396183
+batch nb. 6      loss: 0.00384145718999207
+batch nb. 7      loss: 0.003541325218975544
+batch nb. 8      loss: 0.004102103877812624
+batch nb. 9      loss: 0.00515174912288785
+batch nb. 10      loss: 0.0046783387660980225
+batch nb. 11      loss: 0.005330725107342005
+batch nb. 12      loss: 0.0052880835719406605
+batch nb. 13      loss: 0.0038543075788766146
+batch nb. 14      loss: 0.0036048698239028454
+batch nb. 15      loss: 0.0036772675812244415
+validation:          Loss: 0.004214478190988302 train loss : 0.004904082510620356
+Epoch:  74
+batch nb. 0      loss: 0.004097112454473972
+batch nb. 1      loss: 0.003412503283470869
+batch nb. 2      loss: 0.0030492038931697607
+batch nb. 3      loss: 0.003134149592369795
+batch nb. 4      loss: 0.0032799618784338236
+batch nb. 5      loss: 0.003329566214233637
+batch nb. 6      loss: 0.0038211275823414326
+batch nb. 7      loss: 0.003524965373799205
+batch nb. 8      loss: 0.0040499004535377026
+batch nb. 9      loss: 0.005153513513505459
+batch nb. 10      loss: 0.004659371916204691
+batch nb. 11      loss: 0.005245931912213564
+batch nb. 12      loss: 0.005273487884551287
+batch nb. 13      loss: 0.003886137856170535
+batch nb. 14      loss: 0.003581693861633539
+batch nb. 15      loss: 0.003615907859057188
+validation:          Loss: 0.00418071448802948 train loss : 0.004886907059699297
+Epoch:  75
+batch nb. 0      loss: 0.004063428845256567
+batch nb. 1      loss: 0.003387636272236705
+batch nb. 2      loss: 0.0030182937625795603
+batch nb. 3      loss: 0.003146837465465069
+batch nb. 4      loss: 0.003294286085292697
+batch nb. 5      loss: 0.003307964652776718
+batch nb. 6      loss: 0.003770539304241538
+batch nb. 7      loss: 0.003498491132631898
+batch nb. 8      loss: 0.004028720315545797
+batch nb. 9      loss: 0.005075928755104542
+batch nb. 10      loss: 0.004583942238241434
+batch nb. 11      loss: 0.00522112101316452
+batch nb. 12      loss: 0.005232209339737892
+batch nb. 13      loss: 0.0038416131865233183
+batch nb. 14      loss: 0.003590585896745324
+batch nb. 15      loss: 0.0036714323796331882
+validation:          Loss: 0.004107791464775801 train loss : 0.004870913922786713
+new best model
+Epoch:  76
+batch nb. 0      loss: 0.004021260887384415
+batch nb. 1      loss: 0.0034210053272545338
+batch nb. 2      loss: 0.0030038547702133656
+batch nb. 3      loss: 0.00311008607968688
+batch nb. 4      loss: 0.003311916720122099
+batch nb. 5      loss: 0.003366801654919982
+batch nb. 6      loss: 0.0038060988299548626
+batch nb. 7      loss: 0.0035195080563426018
+batch nb. 8      loss: 0.004049570765346289
+batch nb. 9      loss: 0.005065931472927332
+batch nb. 10      loss: 0.004586717113852501
+batch nb. 11      loss: 0.00522646913304925
+batch nb. 12      loss: 0.00522769708186388
+batch nb. 13      loss: 0.003818122437223792
+batch nb. 14      loss: 0.0035794496070593596
+batch nb. 15      loss: 0.0036511339712888002
+validation:          Loss: 0.004071453586220741 train loss : 0.004855072591453791
+new best model
+Epoch:  77
+batch nb. 0      loss: 0.004033506382256746
+batch nb. 1      loss: 0.0034164011012762785
+batch nb. 2      loss: 0.003038822440430522
+batch nb. 3      loss: 0.003086897311732173
+batch nb. 4      loss: 0.003330153413116932
+batch nb. 5      loss: 0.0033855587244033813
+batch nb. 6      loss: 0.003777039935812354
+batch nb. 7      loss: 0.003501522121950984
+batch nb. 8      loss: 0.004044360481202602
+batch nb. 9      loss: 0.005058334209024906
+batch nb. 10      loss: 0.004612585064023733
+batch nb. 11      loss: 0.00518700061365962
+batch nb. 12      loss: 0.005211931187659502
+batch nb. 13      loss: 0.0038080436643213034
+batch nb. 14      loss: 0.003574926871806383
+batch nb. 15      loss: 0.003687914228066802
+validation:          Loss: 0.004083259496837854 train loss : 0.004840109031647444
+Epoch:  78
+batch nb. 0      loss: 0.004063348285853863
+batch nb. 1      loss: 0.0033664009533822536
+batch nb. 2      loss: 0.002995711285620928
+batch nb. 3      loss: 0.0031106043606996536
+batch nb. 4      loss: 0.0033103849273175
+batch nb. 5      loss: 0.00337237142957747
+batch nb. 6      loss: 0.003783854190260172
+batch nb. 7      loss: 0.0035198840778321028
+batch nb. 8      loss: 0.004121189936995506
+batch nb. 9      loss: 0.005064031109213829
+batch nb. 10      loss: 0.0045824539847671986
+batch nb. 11      loss: 0.0051766918040812016
+batch nb. 12      loss: 0.005188808310776949
+batch nb. 13      loss: 0.003835538402199745
+batch nb. 14      loss: 0.0035856838803738356
+batch nb. 15      loss: 0.0036810734309256077
+validation:          Loss: 0.004156793467700481 train loss : 0.004825437907129526
+Epoch:  79
+batch nb. 0      loss: 0.004122862592339516
+batch nb. 1      loss: 0.0034477494191378355
+batch nb. 2      loss: 0.002981191035360098
+batch nb. 3      loss: 0.003048997139558196
+batch nb. 4      loss: 0.0032602360006421804
+batch nb. 5      loss: 0.003325233468785882
+batch nb. 6      loss: 0.0038047796115279198
+batch nb. 7      loss: 0.0035524480044841766
+batch nb. 8      loss: 0.0041398112662136555
+batch nb. 9      loss: 0.005129198078066111
+batch nb. 10      loss: 0.004560364410281181
+batch nb. 11      loss: 0.005154127720743418
+batch nb. 12      loss: 0.005204875022172928
+batch nb. 13      loss: 0.0037956107407808304
+batch nb. 14      loss: 0.003571445122361183
+batch nb. 15      loss: 0.0036706416867673397
+validation:          Loss: 0.004145652521401644 train loss : 0.004811001941561699
+Epoch:  80
+batch nb. 0      loss: 0.004097995813935995
+batch nb. 1      loss: 0.003439235733821988
+batch nb. 2      loss: 0.0029893142636865377
+batch nb. 3      loss: 0.0030605343636125326
+batch nb. 4      loss: 0.0032313105184584856
+batch nb. 5      loss: 0.0032787637319415808
+batch nb. 6      loss: 0.0037534362636506557
+batch nb. 7      loss: 0.00353025714866817
+batch nb. 8      loss: 0.004115750081837177
+batch nb. 9      loss: 0.005124963819980621
+batch nb. 10      loss: 0.004593611694872379
+batch nb. 11      loss: 0.005170624703168869
+batch nb. 12      loss: 0.005230378359556198
+batch nb. 13      loss: 0.0037726853042840958
+batch nb. 14      loss: 0.003535626456141472
+batch nb. 15      loss: 0.0035881332587450743
+validation:          Loss: 0.004113931208848953 train loss : 0.004795904736965895
+Epoch:  81
+batch nb. 0      loss: 0.004068286158144474
+batch nb. 1      loss: 0.0034275520592927933
+batch nb. 2      loss: 0.0029957331717014313
+batch nb. 3      loss: 0.0030825852882117033
+batch nb. 4      loss: 0.0032234706450253725
+batch nb. 5      loss: 0.003274494083598256
+batch nb. 6      loss: 0.003740999847650528
+batch nb. 7      loss: 0.003474979195743799
+batch nb. 8      loss: 0.00407162681221962
+batch nb. 9      loss: 0.0050661806017160416
+batch nb. 10      loss: 0.004561996087431908
+batch nb. 11      loss: 0.005137728061527014
+batch nb. 12      loss: 0.005183202680200338
+batch nb. 13      loss: 0.0037999346386641264
+batch nb. 14      loss: 0.00352521613240242
+batch nb. 15      loss: 0.0035683924797922373
+validation:          Loss: 0.004074542783200741 train loss : 0.004780935123562813
+Epoch:  82
+batch nb. 0      loss: 0.004026789218187332
+batch nb. 1      loss: 0.0034043672494590282
+batch nb. 2      loss: 0.0029558457899838686
+batch nb. 3      loss: 0.0030604596249759197
+batch nb. 4      loss: 0.0032196170650422573
+batch nb. 5      loss: 0.0032634667586535215
+batch nb. 6      loss: 0.003722941502928734
+batch nb. 7      loss: 0.003471687901765108
+batch nb. 8      loss: 0.004063091240823269
+batch nb. 9      loss: 0.0050834184512495995
+batch nb. 10      loss: 0.00454896641895175
+batch nb. 11      loss: 0.005087058991193771
+batch nb. 12      loss: 0.00517250457778573
+batch nb. 13      loss: 0.003799233352765441
+batch nb. 14      loss: 0.0035377121530473232
+batch nb. 15      loss: 0.003606583923101425
+validation:          Loss: 0.004072112031280994 train loss : 0.0047667864710092545
+Epoch:  83
+batch nb. 0      loss: 0.004067952279001474
+batch nb. 1      loss: 0.0033888330217450857
+batch nb. 2      loss: 0.0029640858992934227
+batch nb. 3      loss: 0.0030347572173923254
+batch nb. 4      loss: 0.003232422284781933
+batch nb. 5      loss: 0.0032637726981192827
+batch nb. 6      loss: 0.0037256693467497826
+batch nb. 7      loss: 0.0034776844549924135
+batch nb. 8      loss: 0.004042590036988258
+batch nb. 9      loss: 0.0050553628243505955
+batch nb. 10      loss: 0.004574793856590986
+batch nb. 11      loss: 0.005137160420417786
+batch nb. 12      loss: 0.005150262266397476
+batch nb. 13      loss: 0.003780655562877655
+batch nb. 14      loss: 0.003560832468792796
+batch nb. 15      loss: 0.0036637389566749334
+validation:          Loss: 0.004149013664573431 train loss : 0.004753654822707176
+Epoch:  84
+batch nb. 0      loss: 0.004115760326385498
+batch nb. 1      loss: 0.003403216600418091
+batch nb. 2      loss: 0.0029813621658831835
+batch nb. 3      loss: 0.003042325610294938
+batch nb. 4      loss: 0.003255133517086506
+batch nb. 5      loss: 0.0033592642284929752
+batch nb. 6      loss: 0.0038466472178697586
+batch nb. 7      loss: 0.003500902559608221
+batch nb. 8      loss: 0.004018775653094053
+batch nb. 9      loss: 0.005007241386920214
+batch nb. 10      loss: 0.0045701609924435616
+batch nb. 11      loss: 0.005119707435369492
+batch nb. 12      loss: 0.005104942247271538
+batch nb. 13      loss: 0.003759149694815278
+batch nb. 14      loss: 0.003550613299012184
+batch nb. 15      loss: 0.0036825218703597784
+validation:          Loss: 0.004204758908599615 train loss : 0.0047410535626113415
+Epoch:  85
+batch nb. 0      loss: 0.004216104280203581
+batch nb. 1      loss: 0.0034365553874522448
+batch nb. 2      loss: 0.0029793886933475733
+batch nb. 3      loss: 0.0030817079823464155
+batch nb. 4      loss: 0.0032417813781648874
+batch nb. 5      loss: 0.003313484601676464
+batch nb. 6      loss: 0.0038486060220748186
+batch nb. 7      loss: 0.00357297551818192
+batch nb. 8      loss: 0.004071065224707127
+batch nb. 9      loss: 0.0050428458489477634
+batch nb. 10      loss: 0.004582331981509924
+batch nb. 11      loss: 0.005176239646971226
+batch nb. 12      loss: 0.005144312512129545
+batch nb. 13      loss: 0.0038136299699544907
+batch nb. 14      loss: 0.00352111947722733
+batch nb. 15      loss: 0.003551591420546174
+validation:          Loss: 0.0041856952011585236 train loss : 0.004727222491055727
+Epoch:  86
+batch nb. 0      loss: 0.004179161507636309
+batch nb. 1      loss: 0.0034828123170882463
+batch nb. 2      loss: 0.002999429125338793
+batch nb. 3      loss: 0.0030952233355492353
+batch nb. 4      loss: 0.0032533654011785984
+batch nb. 5      loss: 0.0032941095996648073
+batch nb. 6      loss: 0.0037348128389567137
+batch nb. 7      loss: 0.003536555217579007
+batch nb. 8      loss: 0.004039478488266468
+batch nb. 9      loss: 0.005085972137749195
+batch nb. 10      loss: 0.0045704105868935585
+batch nb. 11      loss: 0.005129488185048103
+batch nb. 12      loss: 0.0051197754219174385
+batch nb. 13      loss: 0.0038180591072887182
+batch nb. 14      loss: 0.0035073014441877604
+batch nb. 15      loss: 0.003595275804400444
+validation:          Loss: 0.004066001158207655 train loss : 0.0047142114490270615
+new best model
+Epoch:  87
+batch nb. 0      loss: 0.004012407269328833
+batch nb. 1      loss: 0.0034244083799421787
+batch nb. 2      loss: 0.0029792531859129667
+batch nb. 3      loss: 0.003077754285186529
+batch nb. 4      loss: 0.0032123567070811987
+batch nb. 5      loss: 0.0032946004066616297
+batch nb. 6      loss: 0.0037229701410979033
+batch nb. 7      loss: 0.0034551857970654964
+batch nb. 8      loss: 0.004086692351847887
+batch nb. 9      loss: 0.005000234115868807
+batch nb. 10      loss: 0.004565118346363306
+batch nb. 11      loss: 0.005083609838038683
+batch nb. 12      loss: 0.005137699190527201
+batch nb. 13      loss: 0.003877330105751753
+batch nb. 14      loss: 0.003567064879462123
+batch nb. 15      loss: 0.003640902228653431
+validation:          Loss: 0.00407063215970993 train loss : 0.004702014848589897
+Epoch:  88
+batch nb. 0      loss: 0.0040502906776964664
+batch nb. 1      loss: 0.003404815448448062
+batch nb. 2      loss: 0.003007316030561924
+batch nb. 3      loss: 0.003023909404873848
+batch nb. 4      loss: 0.003217665944248438
+batch nb. 5      loss: 0.0032995964866131544
+batch nb. 6      loss: 0.0037372198421508074
+batch nb. 7      loss: 0.0034495473373681307
+batch nb. 8      loss: 0.003973068203777075
+batch nb. 9      loss: 0.004993967246264219
+batch nb. 10      loss: 0.004495277069509029
+batch nb. 11      loss: 0.005018413066864014
+batch nb. 12      loss: 0.00504449475556612
+batch nb. 13      loss: 0.0037317853420972824
+batch nb. 14      loss: 0.0034766118042171
+batch nb. 15      loss: 0.003559451550245285
+validation:          Loss: 0.0040421332232654095 train loss : 0.004689176566898823
+new best model
+Epoch:  89
+batch nb. 0      loss: 0.004026907961815596
+batch nb. 1      loss: 0.0033413153141736984
+batch nb. 2      loss: 0.0029004637617617846
+batch nb. 3      loss: 0.0029888073913753033
+batch nb. 4      loss: 0.0031909903045743704
+batch nb. 5      loss: 0.0032633321825414896
+batch nb. 6      loss: 0.0036766466218978167
+batch nb. 7      loss: 0.003396398387849331
+batch nb. 8      loss: 0.003940634895116091
+batch nb. 9      loss: 0.004953404888510704
+batch nb. 10      loss: 0.004500807728618383
+batch nb. 11      loss: 0.005052860360592604
+batch nb. 12      loss: 0.005041615571826696
+batch nb. 13      loss: 0.0037063637282699347
+batch nb. 14      loss: 0.0034654433839023113
+batch nb. 15      loss: 0.0035871488507837057
+validation:          Loss: 0.0040087951347231865 train loss : 0.004676932003349066
+new best model
+Epoch:  90
+batch nb. 0      loss: 0.004033061675727367
+batch nb. 1      loss: 0.0033046749886125326
+batch nb. 2      loss: 0.00289584300480783
+batch nb. 3      loss: 0.0029477826319634914
+batch nb. 4      loss: 0.0031579583883285522
+batch nb. 5      loss: 0.003271412802860141
+batch nb. 6      loss: 0.0037474900018423796
+batch nb. 7      loss: 0.003405919997021556
+batch nb. 8      loss: 0.003907006699591875
+batch nb. 9      loss: 0.004967279266566038
+batch nb. 10      loss: 0.004467948339879513
+batch nb. 11      loss: 0.005008790176361799
+batch nb. 12      loss: 0.00501843960955739
+batch nb. 13      loss: 0.0036734906025230885
+batch nb. 14      loss: 0.0034373754169791937
+batch nb. 15      loss: 0.0035446672700345516
+validation:          Loss: 0.004096081480383873 train loss : 0.004664489533752203
+Epoch:  91
+batch nb. 0      loss: 0.004102769773453474
+batch nb. 1      loss: 0.003366488730534911
+batch nb. 2      loss: 0.002883769338950515
+batch nb. 3      loss: 0.0029433665331453085
+batch nb. 4      loss: 0.0031341519206762314
+batch nb. 5      loss: 0.0032151322811841965
+batch nb. 6      loss: 0.0036938420962542295
+batch nb. 7      loss: 0.0034227813594043255
+batch nb. 8      loss: 0.003962770104408264
+batch nb. 9      loss: 0.004966643638908863
+batch nb. 10      loss: 0.004477703478187323
+batch nb. 11      loss: 0.005020106676965952
+batch nb. 12      loss: 0.005035524722188711
+batch nb. 13      loss: 0.00369493430480361
+batch nb. 14      loss: 0.0034230153542011976
+batch nb. 15      loss: 0.003437201725319028
+validation:          Loss: 0.0040793390944600105 train loss : 0.004651149269193411
+Epoch:  92
+batch nb. 0      loss: 0.004002701491117477
+batch nb. 1      loss: 0.003363457042723894
+batch nb. 2      loss: 0.002904673106968403
+batch nb. 3      loss: 0.002971561625599861
+batch nb. 4      loss: 0.003135071834549308
+batch nb. 5      loss: 0.0031533129513263702
+batch nb. 6      loss: 0.0036338623613119125
+batch nb. 7      loss: 0.003395918756723404
+batch nb. 8      loss: 0.003921762108802795
+batch nb. 9      loss: 0.004927319474518299
+batch nb. 10      loss: 0.004457161296159029
+batch nb. 11      loss: 0.004964692518115044
+batch nb. 12      loss: 0.0050124190747737885
+batch nb. 13      loss: 0.0036668225657194853
+batch nb. 14      loss: 0.0034164448734372854
+batch nb. 15      loss: 0.003441818058490753
+validation:          Loss: 0.004005841910839081 train loss : 0.004638145677745342
+new best model
+Epoch:  93
+batch nb. 0      loss: 0.003896162612363696
+batch nb. 1      loss: 0.0032965680584311485
+batch nb. 2      loss: 0.0029105045832693577
+batch nb. 3      loss: 0.0029882011003792286
+batch nb. 4      loss: 0.003130177268758416
+batch nb. 5      loss: 0.0031507753301411867
+batch nb. 6      loss: 0.0036001987755298615
+batch nb. 7      loss: 0.0033585550263524055
+batch nb. 8      loss: 0.003870772197842598
+batch nb. 9      loss: 0.004853887017816305
+batch nb. 10      loss: 0.004456168971955776
+batch nb. 11      loss: 0.005005627404898405
+batch nb. 12      loss: 0.005022923927754164
+batch nb. 13      loss: 0.0036415609065443277
+batch nb. 14      loss: 0.0034319336991757154
+batch nb. 15      loss: 0.003521246835589409
+validation:          Loss: 0.003921755589544773 train loss : 0.004626263864338398
+new best model
+Epoch:  94
+batch nb. 0      loss: 0.003830407513305545
+batch nb. 1      loss: 0.003219797508791089
+batch nb. 2      loss: 0.0028834508266299963
+batch nb. 3      loss: 0.0029858462512493134
+batch nb. 4      loss: 0.0031187189742922783
+batch nb. 5      loss: 0.0031645800918340683
+batch nb. 6      loss: 0.0035892194136977196
+batch nb. 7      loss: 0.003338427748531103
+batch nb. 8      loss: 0.0038588561583310366
+batch nb. 9      loss: 0.004837603773921728
+batch nb. 10      loss: 0.0044070095755159855
+batch nb. 11      loss: 0.004987760912626982
+batch nb. 12      loss: 0.005004179663956165
+batch nb. 13      loss: 0.0036511002108454704
+batch nb. 14      loss: 0.0033983804751187563
+batch nb. 15      loss: 0.003538156393915415
+validation:          Loss: 0.0039763664826750755 train loss : 0.0046148099936544895
+Epoch:  95
+batch nb. 0      loss: 0.003893904620781541
+batch nb. 1      loss: 0.0032271125819534063
+batch nb. 2      loss: 0.002818809589371085
+batch nb. 3      loss: 0.002924108412116766
+batch nb. 4      loss: 0.003111122874543071
+batch nb. 5      loss: 0.0031654154881834984
+batch nb. 6      loss: 0.0036178776063024998
+batch nb. 7      loss: 0.003366375109180808
+batch nb. 8      loss: 0.003920270595699549
+batch nb. 9      loss: 0.004845312796533108
+batch nb. 10      loss: 0.004416307900100946
+batch nb. 11      loss: 0.00495875533670187
+batch nb. 12      loss: 0.004977754782885313
+batch nb. 13      loss: 0.003681914182379842
+batch nb. 14      loss: 0.003420986933633685
+batch nb. 15      loss: 0.003412981051951647
+validation:          Loss: 0.003913469612598419 train loss : 0.004602291155606508
+new best model
+Epoch:  96
+batch nb. 0      loss: 0.003841026220470667
+batch nb. 1      loss: 0.003261956386268139
+batch nb. 2      loss: 0.0028358432464301586
+batch nb. 3      loss: 0.0029170617926865816
+batch nb. 4      loss: 0.003072212915867567
+batch nb. 5      loss: 0.0031802740413695574
+batch nb. 6      loss: 0.0036216797307133675
+batch nb. 7      loss: 0.0033477996475994587
+batch nb. 8      loss: 0.003876249771565199
+batch nb. 9      loss: 0.004817971959710121
+batch nb. 10      loss: 0.004373584873974323
+batch nb. 11      loss: 0.00503710750490427
+batch nb. 12      loss: 0.0049783652648329735
+batch nb. 13      loss: 0.003715833183377981
+batch nb. 14      loss: 0.0034158416092395782
+batch nb. 15      loss: 0.0034672522451728582
+validation:          Loss: 0.0039467657916247845 train loss : 0.004590590018779039
+Epoch:  97
+batch nb. 0      loss: 0.0038720062002539635
+batch nb. 1      loss: 0.003295290982350707
+batch nb. 2      loss: 0.002844397211447358
+batch nb. 3      loss: 0.0029530171304941177
+batch nb. 4      loss: 0.0031140197534114122
+batch nb. 5      loss: 0.0032127252779901028
+batch nb. 6      loss: 0.003648699028417468
+batch nb. 7      loss: 0.003353036707267165
+batch nb. 8      loss: 0.0038411703426390886
+batch nb. 9      loss: 0.004821293987333775
+batch nb. 10      loss: 0.004372643306851387
+batch nb. 11      loss: 0.004944807384163141
+batch nb. 12      loss: 0.00494458619505167
+batch nb. 13      loss: 0.003686514450237155
+batch nb. 14      loss: 0.003404239658266306
+batch nb. 15      loss: 0.003451250260695815
+validation:          Loss: 0.00395543547347188 train loss : 0.004578964319080114
+Epoch:  98
+batch nb. 0      loss: 0.0039058937691152096
+batch nb. 1      loss: 0.0033041168935596943
+batch nb. 2      loss: 0.002878775354474783
+batch nb. 3      loss: 0.002970027970150113
+batch nb. 4      loss: 0.0031005931086838245
+batch nb. 5      loss: 0.0031576890032738447
+batch nb. 6      loss: 0.0036445490550249815
+batch nb. 7      loss: 0.0033718827180564404
+batch nb. 8      loss: 0.003839373355731368
+batch nb. 9      loss: 0.004799006041139364
+batch nb. 10      loss: 0.00434427335858345
+batch nb. 11      loss: 0.004875082988291979
+batch nb. 12      loss: 0.004945367109030485
+batch nb. 13      loss: 0.0035715175326913595
+batch nb. 14      loss: 0.003330805106088519
+batch nb. 15      loss: 0.003391468431800604
+validation:          Loss: 0.00384404300712049 train loss : 0.004566969349980354
+new best model
+Epoch:  99
+batch nb. 0      loss: 0.0037799477577209473
+batch nb. 1      loss: 0.0031978548504412174
+batch nb. 2      loss: 0.0028008543886244297
+batch nb. 3      loss: 0.00287066912278533
+batch nb. 4      loss: 0.0030441582202911377
+batch nb. 5      loss: 0.003096210304647684
+batch nb. 6      loss: 0.0035042560193687677
+batch nb. 7      loss: 0.0032696027774363756
+batch nb. 8      loss: 0.0037760024424642324
+batch nb. 9      loss: 0.004759283270686865
+batch nb. 10      loss: 0.004339547362178564
+batch nb. 11      loss: 0.004817369394004345
+batch nb. 12      loss: 0.004887494724243879
+batch nb. 13      loss: 0.003571124980226159
+batch nb. 14      loss: 0.003320919582620263
+batch nb. 15      loss: 0.003366513177752495
+validation:          Loss: 0.003756169695407152 train loss : 0.004554964601993561
+new best model
+Epoch:  100
+batch nb. 0      loss: 0.0036491546779870987
+batch nb. 1      loss: 0.0030733011662960052
+batch nb. 2      loss: 0.0027363337576389313
+batch nb. 3      loss: 0.002820695983245969
+batch nb. 4      loss: 0.0029956488870084286
+batch nb. 5      loss: 0.003077353350818157
+batch nb. 6      loss: 0.0034901092294603586
+batch nb. 7      loss: 0.0032169222831726074
+batch nb. 8      loss: 0.003740316955372691
+batch nb. 9      loss: 0.004715684335678816
+batch nb. 10      loss: 0.004291192628443241
+batch nb. 11      loss: 0.004817393608391285
+batch nb. 12      loss: 0.004866661503911018
+batch nb. 13      loss: 0.0035458949860185385
+batch nb. 14      loss: 0.003322676056995988
+batch nb. 15      loss: 0.0034038303419947624
+validation:          Loss: 0.0037922021001577377 train loss : 0.004543567541986704
+Epoch:  101
+batch nb. 0      loss: 0.0036881829146295786
+batch nb. 1      loss: 0.003063064767047763
+batch nb. 2      loss: 0.0027071144431829453
+batch nb. 3      loss: 0.002804008312523365
+batch nb. 4      loss: 0.0029822890646755695
+batch nb. 5      loss: 0.0030669185798615217
+batch nb. 6      loss: 0.0035092129837721586
+batch nb. 7      loss: 0.003236552933230996
+batch nb. 8      loss: 0.0037657052744179964
+batch nb. 9      loss: 0.0047601694241166115
+batch nb. 10      loss: 0.004293002188205719
+batch nb. 11      loss: 0.004773355554789305
+batch nb. 12      loss: 0.004855053499341011
+batch nb. 13      loss: 0.0035497189965099096
+batch nb. 14      loss: 0.0033062065485864878
+batch nb. 15      loss: 0.003364402800798416
+validation:          Loss: 0.003793362295255065 train loss : 0.004532007034868002
+Epoch:  102
+batch nb. 0      loss: 0.003702413523569703
+batch nb. 1      loss: 0.0031070131808519363
+batch nb. 2      loss: 0.0027577101718634367
+batch nb. 3      loss: 0.0028420486487448215
+batch nb. 4      loss: 0.00302006839774549
+batch nb. 5      loss: 0.0030892700888216496
+batch nb. 6      loss: 0.0035060441587120295
+batch nb. 7      loss: 0.0032543777488172054
+batch nb. 8      loss: 0.0037195058539509773
+batch nb. 9      loss: 0.00471654674038291
+batch nb. 10      loss: 0.0042869169265031815
+batch nb. 11      loss: 0.004811643622815609
+batch nb. 12      loss: 0.004834465682506561
+batch nb. 13      loss: 0.003546543652191758
+batch nb. 14      loss: 0.003325223457068205
+batch nb. 15      loss: 0.0034125943202525377
+validation:          Loss: 0.003805733984336257 train loss : 0.004521138966083527
+Epoch:  103
+batch nb. 0      loss: 0.0037577105686068535
+batch nb. 1      loss: 0.0030926023609936237
+batch nb. 2      loss: 0.0027033768128603697
+batch nb. 3      loss: 0.002822635695338249
+batch nb. 4      loss: 0.003014710731804371
+batch nb. 5      loss: 0.0031141028739511967
+batch nb. 6      loss: 0.0035707310307770967
+batch nb. 7      loss: 0.0032637882977724075
+batch nb. 8      loss: 0.0037290218751877546
+batch nb. 9      loss: 0.004679596051573753
+batch nb. 10      loss: 0.004261430818587542
+batch nb. 11      loss: 0.004779868293553591
+batch nb. 12      loss: 0.0048082065768539906
+batch nb. 13      loss: 0.003531973110511899
+batch nb. 14      loss: 0.003328004851937294
+batch nb. 15      loss: 0.0034256873186677694
+validation:          Loss: 0.003843174781650305 train loss : 0.0045106057077646255
+Epoch:  104
+batch nb. 0      loss: 0.003822621190920472
+batch nb. 1      loss: 0.0031446940265595913
+batch nb. 2      loss: 0.0026957360096275806
+batch nb. 3      loss: 0.0027591141406446695
+batch nb. 4      loss: 0.0029694107361137867
+batch nb. 5      loss: 0.00306764617562294
+batch nb. 6      loss: 0.0035464807879179716
+batch nb. 7      loss: 0.0032701061572879553
+batch nb. 8      loss: 0.003784730564802885
+batch nb. 9      loss: 0.004735412076115608
+batch nb. 10      loss: 0.004279016051441431
+batch nb. 11      loss: 0.0047875321470201015
+batch nb. 12      loss: 0.004813001956790686
+batch nb. 13      loss: 0.00352432276122272
+batch nb. 14      loss: 0.003307470353320241
+batch nb. 15      loss: 0.003321519121527672
+validation:          Loss: 0.0038329458329826593 train loss : 0.004499280825257301
+Epoch:  105
+batch nb. 0      loss: 0.0037481223698705435
+batch nb. 1      loss: 0.0031600960064679384
+batch nb. 2      loss: 0.0027411847840994596
+batch nb. 3      loss: 0.002778100548312068
+batch nb. 4      loss: 0.0029437942430377007
+batch nb. 5      loss: 0.0030058471020311117
+batch nb. 6      loss: 0.003480541752651334
+batch nb. 7      loss: 0.0032524175476282835
+batch nb. 8      loss: 0.003799519268795848
+batch nb. 9      loss: 0.004764918237924576
+batch nb. 10      loss: 0.0043237050995230675
+batch nb. 11      loss: 0.004782204050570726
+batch nb. 12      loss: 0.004821338225156069
+batch nb. 13      loss: 0.003492898540571332
+batch nb. 14      loss: 0.0032620613928884268
+batch nb. 15      loss: 0.0032997147645801306
+validation:          Loss: 0.0037624866236001253 train loss : 0.004487964324653149
+Epoch:  106
+batch nb. 0      loss: 0.0036163232289254665
+batch nb. 1      loss: 0.003073154715821147
+batch nb. 2      loss: 0.002744383178651333
+batch nb. 3      loss: 0.002813523868098855
+batch nb. 4      loss: 0.0029445707332342863
+batch nb. 5      loss: 0.0029859633650630713
+batch nb. 6      loss: 0.0034210272133350372
+batch nb. 7      loss: 0.0032212359365075827
+batch nb. 8      loss: 0.0037773295771330595
+batch nb. 9      loss: 0.004718405194580555
+batch nb. 10      loss: 0.004238973371684551
+batch nb. 11      loss: 0.004761828575283289
+batch nb. 12      loss: 0.004852966871112585
+batch nb. 13      loss: 0.0034884426277130842
+batch nb. 14      loss: 0.003235963638871908
+batch nb. 15      loss: 0.003237481229007244
+validation:          Loss: 0.0037159391213208437 train loss : 0.004476277623325586
+new best model
+Epoch:  107
+batch nb. 0      loss: 0.0036083597224205732
+batch nb. 1      loss: 0.003039534669369459
+batch nb. 2      loss: 0.002690501045435667
+batch nb. 3      loss: 0.0027565753553062677
+batch nb. 4      loss: 0.002926434390246868
+batch nb. 5      loss: 0.0029711294919252396
+batch nb. 6      loss: 0.0034372559748589993
+batch nb. 7      loss: 0.0031943947542458773
+batch nb. 8      loss: 0.003743700683116913
+batch nb. 9      loss: 0.00471499003469944
+batch nb. 10      loss: 0.004252966959029436
+batch nb. 11      loss: 0.0047643366269767284
+batch nb. 12      loss: 0.004791012033820152
+batch nb. 13      loss: 0.0035158051177859306
+batch nb. 14      loss: 0.0032516459468752146
+batch nb. 15      loss: 0.003276734845712781
+validation:          Loss: 0.003786588553339243 train loss : 0.004465170670300722
+Epoch:  108
+batch nb. 0      loss: 0.00366388401016593
+batch nb. 1      loss: 0.003063569078221917
+batch nb. 2      loss: 0.0027330685406923294
+batch nb. 3      loss: 0.0028163755778223276
+batch nb. 4      loss: 0.0029505277052521706
+batch nb. 5      loss: 0.0030023972503840923
+batch nb. 6      loss: 0.003439468564465642
+batch nb. 7      loss: 0.00318705290555954
+batch nb. 8      loss: 0.003710251534357667
+batch nb. 9      loss: 0.004654020071029663
+batch nb. 10      loss: 0.004266548436135054
+batch nb. 11      loss: 0.004789714235812426
+batch nb. 12      loss: 0.004821963142603636
+batch nb. 13      loss: 0.0035328927915543318
+batch nb. 14      loss: 0.003247477114200592
+batch nb. 15      loss: 0.003253012662753463
+validation:          Loss: 0.003758339211344719 train loss : 0.004454050213098526
+Epoch:  109
+batch nb. 0      loss: 0.0036745676770806313
+batch nb. 1      loss: 0.003072673687711358
+batch nb. 2      loss: 0.002718539908528328
+batch nb. 3      loss: 0.002825201489031315
+batch nb. 4      loss: 0.0029752016998827457
+batch nb. 5      loss: 0.003027185332030058
+batch nb. 6      loss: 0.0034457482397556305
+batch nb. 7      loss: 0.0031896347645670176
+batch nb. 8      loss: 0.0036756866611540318
+batch nb. 9      loss: 0.004652136005461216
+batch nb. 10      loss: 0.004219618160277605
+batch nb. 11      loss: 0.004770764149725437
+batch nb. 12      loss: 0.004786898847669363
+batch nb. 13      loss: 0.0035222021397203207
+batch nb. 14      loss: 0.0032958232332021
+batch nb. 15      loss: 0.003356636269018054
+validation:          Loss: 0.00373090710490942 train loss : 0.004444073420017958
+Epoch:  110
+batch nb. 0      loss: 0.003625578247010708
+batch nb. 1      loss: 0.0030613532289862633
+batch nb. 2      loss: 0.0026977621018886566
+batch nb. 3      loss: 0.0028152354061603546
+batch nb. 4      loss: 0.002961113816127181
+batch nb. 5      loss: 0.00301354075782001
+batch nb. 6      loss: 0.0034320903941988945
+batch nb. 7      loss: 0.0031839855946600437
+batch nb. 8      loss: 0.003666201839223504
+batch nb. 9      loss: 0.004620235413312912
+batch nb. 10      loss: 0.004211232997477055
+batch nb. 11      loss: 0.004765119403600693
+batch nb. 12      loss: 0.004772531799972057
+batch nb. 13      loss: 0.0034720986150205135
+batch nb. 14      loss: 0.00322291674092412
+batch nb. 15      loss: 0.0032810126431286335
+validation:          Loss: 0.0037721605040133 train loss : 0.004433595575392246
+Epoch:  111
+batch nb. 0      loss: 0.003664142917841673
+batch nb. 1      loss: 0.0030925339087843895
+batch nb. 2      loss: 0.0026914048939943314
+batch nb. 3      loss: 0.002803873736411333
+batch nb. 4      loss: 0.0029912730678915977
+batch nb. 5      loss: 0.003013479057699442
+batch nb. 6      loss: 0.003440692089498043
+batch nb. 7      loss: 0.0031964113004505634
+batch nb. 8      loss: 0.003696132218465209
+batch nb. 9      loss: 0.004667265806347132
+batch nb. 10      loss: 0.004235550295561552
+batch nb. 11      loss: 0.0047786603681743145
+batch nb. 12      loss: 0.004795650951564312
+batch nb. 13      loss: 0.0035456076730042696
+batch nb. 14      loss: 0.0032615764066576958
+batch nb. 15      loss: 0.0033498990815132856
+validation:          Loss: 0.0037270146422088146 train loss : 0.004423919599503279
+Epoch:  112
+batch nb. 0      loss: 0.0036838038358837366
+batch nb. 1      loss: 0.003094326239079237
+batch nb. 2      loss: 0.0027213816065341234
+batch nb. 3      loss: 0.0028411869425326586
+batch nb. 4      loss: 0.0030003448482602835
+batch nb. 5      loss: 0.0030538819264620543
+batch nb. 6      loss: 0.0034836751874536276
+batch nb. 7      loss: 0.0032029643189162016
+batch nb. 8      loss: 0.003685127478092909
+batch nb. 9      loss: 0.004633225966244936
+batch nb. 10      loss: 0.004230715334415436
+batch nb. 11      loss: 0.004761529620736837
+batch nb. 12      loss: 0.004754648543894291
+batch nb. 13      loss: 0.003498205216601491
+batch nb. 14      loss: 0.00327385519631207
+batch nb. 15      loss: 0.003289890941232443
+validation:          Loss: 0.003720427630469203 train loss : 0.004413883667439222
+Epoch:  113
+batch nb. 0      loss: 0.003669837024062872
+batch nb. 1      loss: 0.003064569551497698
+batch nb. 2      loss: 0.002647144254297018
+batch nb. 3      loss: 0.00277868565171957
+batch nb. 4      loss: 0.002959937322884798
+batch nb. 5      loss: 0.0029909643344581127
+batch nb. 6      loss: 0.003419195069000125
+batch nb. 7      loss: 0.0031953637953847647
+batch nb. 8      loss: 0.0036941070575267076
+batch nb. 9      loss: 0.004637016449123621
+batch nb. 10      loss: 0.004220759961754084
+batch nb. 11      loss: 0.004756810609251261
+batch nb. 12      loss: 0.004722364246845245
+batch nb. 13      loss: 0.0034363120794296265
+batch nb. 14      loss: 0.0032736118882894516
+batch nb. 15      loss: 0.003368485253304243
+validation:          Loss: 0.003781241364777088 train loss : 0.004404713865369558
+Epoch:  114
+batch nb. 0      loss: 0.003716543782502413
+batch nb. 1      loss: 0.0031619102228432894
+batch nb. 2      loss: 0.0027036217506974936
+batch nb. 3      loss: 0.00276468344964087
+batch nb. 4      loss: 0.0029840220231562853
+batch nb. 5      loss: 0.0030309793073683977
+batch nb. 6      loss: 0.0034254465717822313
+batch nb. 7      loss: 0.0031968695111572742
+batch nb. 8      loss: 0.003686276962980628
+batch nb. 9      loss: 0.004623772110790014
+batch nb. 10      loss: 0.004207152873277664
+batch nb. 11      loss: 0.004745254293084145
+batch nb. 12      loss: 0.00474283192306757
+batch nb. 13      loss: 0.00349259190261364
+batch nb. 14      loss: 0.003273517359048128
+batch nb. 15      loss: 0.0033430487383157015
+validation:          Loss: 0.003797112498432398 train loss : 0.004395481664687395
+Epoch:  115
+batch nb. 0      loss: 0.0037565960083156824
+batch nb. 1      loss: 0.00320007954724133
+batch nb. 2      loss: 0.002724108984693885
+batch nb. 3      loss: 0.002787388628348708
+batch nb. 4      loss: 0.0029552080668509007
+batch nb. 5      loss: 0.003015151945874095
+batch nb. 6      loss: 0.003459993051365018
+batch nb. 7      loss: 0.003204936161637306
+batch nb. 8      loss: 0.0036900273989886045
+batch nb. 9      loss: 0.004634118638932705
+batch nb. 10      loss: 0.004239261150360107
+batch nb. 11      loss: 0.004816788714379072
+batch nb. 12      loss: 0.004744235891848803
+batch nb. 13      loss: 0.0035093268379569054
+batch nb. 14      loss: 0.003255270654335618
+batch nb. 15      loss: 0.0033543454483151436
+validation:          Loss: 0.003794825868681073 train loss : 0.004386506509035826
+Epoch:  116
+batch nb. 0      loss: 0.0037090182304382324
+batch nb. 1      loss: 0.0030762599781155586
+batch nb. 2      loss: 0.0027201222255825996
+batch nb. 3      loss: 0.0027988057117909193
+batch nb. 4      loss: 0.0029204264283180237
+batch nb. 5      loss: 0.0029776906594634056
+batch nb. 6      loss: 0.0034608528949320316
+batch nb. 7      loss: 0.0032155669759958982
+batch nb. 8      loss: 0.003707099938765168
+batch nb. 9      loss: 0.004660679027438164
+batch nb. 10      loss: 0.00418873643502593
+batch nb. 11      loss: 0.004776100628077984
+batch nb. 12      loss: 0.004798645619302988
+batch nb. 13      loss: 0.0034774504601955414
+batch nb. 14      loss: 0.003200883511453867
+batch nb. 15      loss: 0.003272661240771413
+validation:          Loss: 0.003806543070822954 train loss : 0.004376986529678106
+Epoch:  117
+batch nb. 0      loss: 0.00367161026224494
+batch nb. 1      loss: 0.0030966936610639095
+batch nb. 2      loss: 0.0026918970979750156
+batch nb. 3      loss: 0.0027827806770801544
+batch nb. 4      loss: 0.0029348800890147686
+batch nb. 5      loss: 0.0029725967906415462
+batch nb. 6      loss: 0.003412096295505762
+batch nb. 7      loss: 0.0031584559474140406
+batch nb. 8      loss: 0.003700400935485959
+batch nb. 9      loss: 0.004629261326044798
+batch nb. 10      loss: 0.004261219408363104
+batch nb. 11      loss: 0.00480972696095705
+batch nb. 12      loss: 0.004712820518761873
+batch nb. 13      loss: 0.0034552982542663813
+batch nb. 14      loss: 0.003220508573576808
+batch nb. 15      loss: 0.003257480449974537
+validation:          Loss: 0.003739140462130308 train loss : 0.004367499146610498
+Epoch:  118
+batch nb. 0      loss: 0.0035981195978820324
+batch nb. 1      loss: 0.003033685963600874
+batch nb. 2      loss: 0.0026617487892508507
+batch nb. 3      loss: 0.0027769373264163733
+batch nb. 4      loss: 0.0029428903944790363
+batch nb. 5      loss: 0.0029680337756872177
+batch nb. 6      loss: 0.0033473356161266565
+batch nb. 7      loss: 0.0031255590729415417
+batch nb. 8      loss: 0.0035946446005254984
+batch nb. 9      loss: 0.004515462089329958
+batch nb. 10      loss: 0.0041745975613594055
+batch nb. 11      loss: 0.004727105610072613
+batch nb. 12      loss: 0.004694961942732334
+batch nb. 13      loss: 0.0034249431919306517
+batch nb. 14      loss: 0.003176479134708643
+batch nb. 15      loss: 0.0032404426019638777
+validation:          Loss: 0.0036523102317005396 train loss : 0.004358028061687946
+new best model
+Epoch:  119
+batch nb. 0      loss: 0.00355385709553957
+batch nb. 1      loss: 0.003002640325576067
+batch nb. 2      loss: 0.0026405882090330124
+batch nb. 3      loss: 0.0027138518635183573
+batch nb. 4      loss: 0.0028913042042404413
+batch nb. 5      loss: 0.0029350228141993284
+batch nb. 6      loss: 0.003342876210808754
+batch nb. 7      loss: 0.0030914146918803453
+batch nb. 8      loss: 0.003608411643654108
+batch nb. 9      loss: 0.004559734370559454
+batch nb. 10      loss: 0.004146076273173094
+batch nb. 11      loss: 0.004626748152077198
+batch nb. 12      loss: 0.00467188935726881
+batch nb. 13      loss: 0.0034494646824896336
+batch nb. 14      loss: 0.003185729030519724
+batch nb. 15      loss: 0.003226779168471694
+validation:          Loss: 0.0035944494884461164 train loss : 0.004348600748926401
+new best model
+Epoch:  120
+batch nb. 0      loss: 0.0035344145726412535
+batch nb. 1      loss: 0.0029744745697826147
+batch nb. 2      loss: 0.0025866299401968718
+batch nb. 3      loss: 0.002714578527957201
+batch nb. 4      loss: 0.0028775744140148163
+batch nb. 5      loss: 0.002941923448815942
+batch nb. 6      loss: 0.0033461228013038635
+batch nb. 7      loss: 0.003084480529651046
+batch nb. 8      loss: 0.0035956695210188627
+batch nb. 9      loss: 0.0045355623587965965
+batch nb. 10      loss: 0.004115238785743713
+batch nb. 11      loss: 0.004582023248076439
+batch nb. 12      loss: 0.00467127189040184
+batch nb. 13      loss: 0.0034182933159172535
+batch nb. 14      loss: 0.003171833697706461
+batch nb. 15      loss: 0.0032328132074326277
+validation:          Loss: 0.003645294113084674 train loss : 0.004339379724115133
+Epoch:  121
+batch nb. 0      loss: 0.003595298156142235
+batch nb. 1      loss: 0.00299417064525187
+batch nb. 2      loss: 0.0025776722468435764
+batch nb. 3      loss: 0.002710520988330245
+batch nb. 4      loss: 0.0028895442374050617
+batch nb. 5      loss: 0.002930808113887906
+batch nb. 6      loss: 0.0033805761486291885
+batch nb. 7      loss: 0.003103771014139056
+batch nb. 8      loss: 0.00358604802750051
+batch nb. 9      loss: 0.004533376079052687
+batch nb. 10      loss: 0.004117459524422884
+batch nb. 11      loss: 0.004595157224684954
+batch nb. 12      loss: 0.004632928408682346
+batch nb. 13      loss: 0.0033881589770317078
+batch nb. 14      loss: 0.0031964026857167482
+batch nb. 15      loss: 0.0032939857337623835
+validation:          Loss: 0.003693861421197653 train loss : 0.004330811090767384
+Epoch:  122
+batch nb. 0      loss: 0.0036749416030943394
+batch nb. 1      loss: 0.003033924149349332
+batch nb. 2      loss: 0.002601839369162917
+batch nb. 3      loss: 0.0027314405888319016
+batch nb. 4      loss: 0.002914031036198139
+batch nb. 5      loss: 0.00295915175229311
+batch nb. 6      loss: 0.003398843575268984
+batch nb. 7      loss: 0.0031686413567513227
+batch nb. 8      loss: 0.0036104528699070215
+batch nb. 9      loss: 0.004545404110103846
+batch nb. 10      loss: 0.004129443783313036
+batch nb. 11      loss: 0.00457629282027483
+batch nb. 12      loss: 0.004649725276976824
+batch nb. 13      loss: 0.0033561214804649353
+batch nb. 14      loss: 0.003161330707371235
+batch nb. 15      loss: 0.0033123630564659834
+validation:          Loss: 0.0037367292679846287 train loss : 0.004322530701756477
+Epoch:  123
+batch nb. 0      loss: 0.003675340209156275
+batch nb. 1      loss: 0.0030392331536859274
+batch nb. 2      loss: 0.0026199750136584044
+batch nb. 3      loss: 0.0026864944957196712
+batch nb. 4      loss: 0.002872166456654668
+batch nb. 5      loss: 0.0029655497055500746
+batch nb. 6      loss: 0.0033856190275400877
+batch nb. 7      loss: 0.0031680294778198004
+batch nb. 8      loss: 0.0036948779597878456
+batch nb. 9      loss: 0.004571652505546808
+batch nb. 10      loss: 0.004124179482460022
+batch nb. 11      loss: 0.004594568163156509
+batch nb. 12      loss: 0.004658740013837814
+batch nb. 13      loss: 0.003387321485206485
+batch nb. 14      loss: 0.0031480349134653807
+batch nb. 15      loss: 0.0032795672304928303
+validation:          Loss: 0.003753482596948743 train loss : 0.004314119927585125
+Epoch:  124
+batch nb. 0      loss: 0.003661491209641099
+batch nb. 1      loss: 0.0030535957776010036
+batch nb. 2      loss: 0.0026488895528018475
+batch nb. 3      loss: 0.0026868307031691074
+batch nb. 4      loss: 0.002836074912920594
+batch nb. 5      loss: 0.002911916933953762
+batch nb. 6      loss: 0.0033646004740148783
+batch nb. 7      loss: 0.0031526745297014713
+batch nb. 8      loss: 0.0036905778106302023
+batch nb. 9      loss: 0.004598142579197884
+batch nb. 10      loss: 0.004136966075748205
+batch nb. 11      loss: 0.004615903366357088
+batch nb. 12      loss: 0.0046571423299610615
+batch nb. 13      loss: 0.003394427476450801
+batch nb. 14      loss: 0.003142025088891387
+batch nb. 15      loss: 0.0032392770517617464
+validation:          Loss: 0.003764687804505229 train loss : 0.0043055210262537
+Epoch:  125
+batch nb. 0      loss: 0.003668336197733879
+batch nb. 1      loss: 0.0030519021674990654
+batch nb. 2      loss: 0.002658311976119876
+batch nb. 3      loss: 0.0027155731804668903
+batch nb. 4      loss: 0.0028736242093145847
+batch nb. 5      loss: 0.0029219903517514467
+batch nb. 6      loss: 0.003359926166012883
+batch nb. 7      loss: 0.0031291276682168245
+batch nb. 8      loss: 0.003639980684965849
+batch nb. 9      loss: 0.004565904848277569
+batch nb. 10      loss: 0.0041369106620550156
+batch nb. 11      loss: 0.004615651443600655
+batch nb. 12      loss: 0.004631713032722473
+batch nb. 13      loss: 0.0034236470237374306
+batch nb. 14      loss: 0.003189630573615432
+batch nb. 15      loss: 0.003291700966656208
+validation:          Loss: 0.0037557475734502077 train loss : 0.00429747486487031
+Epoch:  126
+batch nb. 0      loss: 0.0036474675871431828
+batch nb. 1      loss: 0.0030594731215387583
+batch nb. 2      loss: 0.002692459151148796
+batch nb. 3      loss: 0.002722156699746847
+batch nb. 4      loss: 0.0029093092307448387
+batch nb. 5      loss: 0.0029918833170086145
+batch nb. 6      loss: 0.0033608207013458014
+batch nb. 7      loss: 0.0031613288447260857
+batch nb. 8      loss: 0.0036842087283730507
+batch nb. 9      loss: 0.00457976246252656
+batch nb. 10      loss: 0.004163920879364014
+batch nb. 11      loss: 0.004719138611108065
+batch nb. 12      loss: 0.004663006868213415
+batch nb. 13      loss: 0.003456731326878071
+batch nb. 14      loss: 0.003255622461438179
+batch nb. 15      loss: 0.003367384197190404
+validation:          Loss: 0.0038116727955639362 train loss : 0.004290151409804821
+Epoch:  127
+batch nb. 0      loss: 0.003683754475787282
+batch nb. 1      loss: 0.003077406669035554
+batch nb. 2      loss: 0.0026968810707330704
+batch nb. 3      loss: 0.0027563576586544514
+batch nb. 4      loss: 0.0028886308427900076
+batch nb. 5      loss: 0.0029859323985874653
+batch nb. 6      loss: 0.003383909584954381
+batch nb. 7      loss: 0.0031725058797746897
+batch nb. 8      loss: 0.0037152098957449198
+batch nb. 9      loss: 0.004579680971801281
+batch nb. 10      loss: 0.004172467160969973
+batch nb. 11      loss: 0.004735676106065512
+batch nb. 12      loss: 0.004677359480410814
+batch nb. 13      loss: 0.0034217522479593754
+batch nb. 14      loss: 0.0032234035898
+batch nb. 15      loss: 0.0033229761756956577
+validation:          Loss: 0.0037862760946154594 train loss : 0.004282595589756966
+Epoch:  128
+batch nb. 0      loss: 0.00365860341116786
+batch nb. 1      loss: 0.0031037405133247375
+batch nb. 2      loss: 0.0026844572275877
+batch nb. 3      loss: 0.002762256423011422
+batch nb. 4      loss: 0.0029373974539339542
+batch nb. 5      loss: 0.00298468885011971
+batch nb. 6      loss: 0.003373199375346303
+batch nb. 7      loss: 0.0031357856933027506
+batch nb. 8      loss: 0.003672149498015642
+batch nb. 9      loss: 0.004544918425381184
+batch nb. 10      loss: 0.004140864126384258
+batch nb. 11      loss: 0.00467054033651948
+batch nb. 12      loss: 0.004700071178376675
+batch nb. 13      loss: 0.0034084441140294075
+batch nb. 14      loss: 0.0032020669896155596
+batch nb. 15      loss: 0.0032983056735247374
+validation:          Loss: 0.003692211350426078 train loss : 0.004274965263903141
+Epoch:  129
+batch nb. 0      loss: 0.003583169775083661
+batch nb. 1      loss: 0.0031067561358213425
+batch nb. 2      loss: 0.0027138330042362213
+batch nb. 3      loss: 0.0026952349580824375
+batch nb. 4      loss: 0.002917709294706583
+batch nb. 5      loss: 0.0029855435714125633
+batch nb. 6      loss: 0.0033784701954573393
+batch nb. 7      loss: 0.003089304082095623
+batch nb. 8      loss: 0.003602701937779784
+batch nb. 9      loss: 0.004533234052360058
+batch nb. 10      loss: 0.004129179287701845
+batch nb. 11      loss: 0.004627038259059191
+batch nb. 12      loss: 0.004672486800700426
+batch nb. 13      loss: 0.0033976139966398478
+batch nb. 14      loss: 0.003150641918182373
+batch nb. 15      loss: 0.0032904990948736668
+validation:          Loss: 0.003717999206855893 train loss : 0.004267392214387655
+Epoch:  130
+batch nb. 0      loss: 0.0036245249211788177
+batch nb. 1      loss: 0.003052042331546545
+batch nb. 2      loss: 0.002643883228302002
+batch nb. 3      loss: 0.002693798625841737
+batch nb. 4      loss: 0.002873921301215887
+batch nb. 5      loss: 0.0029140813276171684
+batch nb. 6      loss: 0.0033356028143316507
+batch nb. 7      loss: 0.003105833427980542
+batch nb. 8      loss: 0.0036317843478173018
+batch nb. 9      loss: 0.0045465934090316296
+batch nb. 10      loss: 0.004145476501435041
+batch nb. 11      loss: 0.004615338984876871
+batch nb. 12      loss: 0.004670274909585714
+batch nb. 13      loss: 0.003464142559096217
+batch nb. 14      loss: 0.00313855754211545
+batch nb. 15      loss: 0.003227484179660678
+validation:          Loss: 0.0037221817765384912 train loss : 0.0042594545520842075
+Epoch:  131
+batch nb. 0      loss: 0.0036367836873978376
+batch nb. 1      loss: 0.0030330379959195852
+batch nb. 2      loss: 0.002644444117322564
+batch nb. 3      loss: 0.002735326299443841
+batch nb. 4      loss: 0.002906305715441704
+batch nb. 5      loss: 0.002964673563838005
+batch nb. 6      loss: 0.0033882842399179935
+batch nb. 7      loss: 0.0031186274718493223
+batch nb. 8      loss: 0.003594674402847886
+batch nb. 9      loss: 0.004533044993877411
+batch nb. 10      loss: 0.004107894375920296
+batch nb. 11      loss: 0.004579468630254269
+batch nb. 12      loss: 0.004616377875208855
+batch nb. 13      loss: 0.00336733041331172
+batch nb. 14      loss: 0.003142353380098939
+batch nb. 15      loss: 0.003256596624851227
+validation:          Loss: 0.003692170139402151 train loss : 0.0042518568225204945
+Epoch:  132
+batch nb. 0      loss: 0.0036352116148918867
+batch nb. 1      loss: 0.0029885091353207827
+batch nb. 2      loss: 0.0026469859294593334
+batch nb. 3      loss: 0.0027049824129790068
+batch nb. 4      loss: 0.0028747725300490856
+batch nb. 5      loss: 0.0029579007532447577
+batch nb. 6      loss: 0.0033561214804649353
+batch nb. 7      loss: 0.0030815291684120893
+batch nb. 8      loss: 0.0035711810924112797
+batch nb. 9      loss: 0.00450418796390295
+batch nb. 10      loss: 0.004065583925694227
+batch nb. 11      loss: 0.004589770920574665
+batch nb. 12      loss: 0.004585329908877611
+batch nb. 13      loss: 0.0033608542289584875
+batch nb. 14      loss: 0.0031166316475719213
+batch nb. 15      loss: 0.003225622931495309
+validation:          Loss: 0.003724038600921631 train loss : 0.004244140814989805
+Epoch:  133
+batch nb. 0      loss: 0.0035906692501157522
+batch nb. 1      loss: 0.003035641508176923
+batch nb. 2      loss: 0.0026150888297706842
+batch nb. 3      loss: 0.0026582623831927776
+batch nb. 4      loss: 0.0028383913449943066
+batch nb. 5      loss: 0.002917245961725712
+batch nb. 6      loss: 0.003329731523990631
+batch nb. 7      loss: 0.003072543302550912
+batch nb. 8      loss: 0.003579989541321993
+batch nb. 9      loss: 0.004484356846660376
+batch nb. 10      loss: 0.004100194666534662
+batch nb. 11      loss: 0.00457759341225028
+batch nb. 12      loss: 0.004544760100543499
+batch nb. 13      loss: 0.003337915986776352
+batch nb. 14      loss: 0.0031223564874380827
+batch nb. 15      loss: 0.003214208409190178
+validation:          Loss: 0.003662550589069724 train loss : 0.004236454609781504
+Epoch:  134
+batch nb. 0      loss: 0.003586897626519203
+batch nb. 1      loss: 0.003015900496393442
+batch nb. 2      loss: 0.0026133661158382893
+batch nb. 3      loss: 0.0026813880540430546
+batch nb. 4      loss: 0.00282680569216609
+batch nb. 5      loss: 0.002913934178650379
+batch nb. 6      loss: 0.00334122939966619
+batch nb. 7      loss: 0.003058969508856535
+batch nb. 8      loss: 0.0035435231402516365
+batch nb. 9      loss: 0.0044647688046097755
+batch nb. 10      loss: 0.0040568821132183075
+batch nb. 11      loss: 0.004549206700176001
+batch nb. 12      loss: 0.004541224800050259
+batch nb. 13      loss: 0.0033006155863404274
+batch nb. 14      loss: 0.003107431111857295
+batch nb. 15      loss: 0.0031873034313321114
+validation:          Loss: 0.003647122997790575 train loss : 0.0042286827228963375
+Epoch:  135
+batch nb. 0      loss: 0.003600575728341937
+batch nb. 1      loss: 0.0029653513338416815
+batch nb. 2      loss: 0.0025815789122134447
+batch nb. 3      loss: 0.002655221149325371
+batch nb. 4      loss: 0.0028174016624689102
+batch nb. 5      loss: 0.0028781055007129908
+batch nb. 6      loss: 0.0033255205489695072
+batch nb. 7      loss: 0.0030505128670483828
+batch nb. 8      loss: 0.003508951747789979
+batch nb. 9      loss: 0.004443435464054346
+batch nb. 10      loss: 0.004037828650325537
+batch nb. 11      loss: 0.00451678317040205
+batch nb. 12      loss: 0.004525759257376194
+batch nb. 13      loss: 0.0032987319864332676
+batch nb. 14      loss: 0.0030799361411482096
+batch nb. 15      loss: 0.0031455408316105604
+validation:          Loss: 0.003614532295614481 train loss : 0.0042207189835608006
+Epoch:  136
+batch nb. 0      loss: 0.0035339691676199436
+batch nb. 1      loss: 0.003014146815985441
+batch nb. 2      loss: 0.002606345107778907
+batch nb. 3      loss: 0.00264451140537858
+batch nb. 4      loss: 0.0028086926322430372
+batch nb. 5      loss: 0.00287146819755435
+batch nb. 6      loss: 0.003313389839604497
+batch nb. 7      loss: 0.003048728220164776
+batch nb. 8      loss: 0.0035453219898045063
+batch nb. 9      loss: 0.004452467430382967
+batch nb. 10      loss: 0.004040038213133812
+batch nb. 11      loss: 0.00450318306684494
+batch nb. 12      loss: 0.004511668812483549
+batch nb. 13      loss: 0.0033015517983585596
+batch nb. 14      loss: 0.0030878144316375256
+batch nb. 15      loss: 0.003174541052430868
+validation:          Loss: 0.0036303468514233828 train loss : 0.004213082604110241
+Epoch:  137
+batch nb. 0      loss: 0.0035821334458887577
+batch nb. 1      loss: 0.0029992859344929457
+batch nb. 2      loss: 0.0026085299905389547
+batch nb. 3      loss: 0.002668350003659725
+batch nb. 4      loss: 0.0027992448303848505
+batch nb. 5      loss: 0.0028621384408324957
+batch nb. 6      loss: 0.0033313545864075422
+batch nb. 7      loss: 0.003078308654949069
+batch nb. 8      loss: 0.0035986430011689663
+batch nb. 9      loss: 0.004495687782764435
+batch nb. 10      loss: 0.004070750903338194
+batch nb. 11      loss: 0.004463664721697569
+batch nb. 12      loss: 0.0045318505726754665
+batch nb. 13      loss: 0.003335112938657403
+batch nb. 14      loss: 0.0031003879848867655
+batch nb. 15      loss: 0.003158595645800233
+validation:          Loss: 0.003611719934269786 train loss : 0.004205441102385521
+Epoch:  138
+batch nb. 0      loss: 0.0035329535603523254
+batch nb. 1      loss: 0.0029879380017518997
+batch nb. 2      loss: 0.0026151270139962435
+batch nb. 3      loss: 0.002647562650963664
+batch nb. 4      loss: 0.0027824861463159323
+batch nb. 5      loss: 0.0028735147789120674
+batch nb. 6      loss: 0.003293194342404604
+batch nb. 7      loss: 0.0030536623671650887
+batch nb. 8      loss: 0.0035235080868005753
+batch nb. 9      loss: 0.004457541275769472
+batch nb. 10      loss: 0.00400962820276618
+batch nb. 11      loss: 0.0044830357655882835
+batch nb. 12      loss: 0.004520065151154995
+batch nb. 13      loss: 0.0033442419953644276
+batch nb. 14      loss: 0.0030876044183969498
+batch nb. 15      loss: 0.0031581991352140903
+validation:          Loss: 0.0036108773201704025 train loss : 0.004197907168418169
+Epoch:  139
+batch nb. 0      loss: 0.003502851352095604
+batch nb. 1      loss: 0.002925893059000373
+batch nb. 2      loss: 0.002571046119555831
+batch nb. 3      loss: 0.0026328787207603455
+batch nb. 4      loss: 0.0027785173151642084
+batch nb. 5      loss: 0.002869623713195324
+batch nb. 6      loss: 0.0032840415369719267
+batch nb. 7      loss: 0.0030440613627433777
+batch nb. 8      loss: 0.003494180738925934
+batch nb. 9      loss: 0.004417909309267998
+batch nb. 10      loss: 0.0040265764109790325
+batch nb. 11      loss: 0.004529315512627363
+batch nb. 12      loss: 0.0045064701698720455
+batch nb. 13      loss: 0.003307697596028447
+batch nb. 14      loss: 0.003055404871702194
+batch nb. 15      loss: 0.0031214049085974693
+validation:          Loss: 0.003593362867832184 train loss : 0.004190217703580856
+new best model
+Epoch:  140
+batch nb. 0      loss: 0.0034893101546913385
+batch nb. 1      loss: 0.0029050481971353292
+batch nb. 2      loss: 0.002564297756180167
+batch nb. 3      loss: 0.002630839357152581
+batch nb. 4      loss: 0.0027647775132209063
+batch nb. 5      loss: 0.002832741942256689
+batch nb. 6      loss: 0.003237045370042324
+batch nb. 7      loss: 0.0030252456199377775
+batch nb. 8      loss: 0.0035065256524831057
+batch nb. 9      loss: 0.004384347703307867
+batch nb. 10      loss: 0.003988584969192743
+batch nb. 11      loss: 0.004500512033700943
+batch nb. 12      loss: 0.004495253786444664
+batch nb. 13      loss: 0.0032619747798889875
+batch nb. 14      loss: 0.0030156702268868685
+batch nb. 15      loss: 0.00303632696159184
+validation:          Loss: 0.0035527965519577265 train loss : 0.00418203417211771
+new best model
+Epoch:  141
+batch nb. 0      loss: 0.0034519631881266832
+batch nb. 1      loss: 0.002850410295650363
+batch nb. 2      loss: 0.002511552767828107
+batch nb. 3      loss: 0.0026237345300614834
+batch nb. 4      loss: 0.002789234509691596
+batch nb. 5      loss: 0.0028328807093203068
+batch nb. 6      loss: 0.003194657852873206
+batch nb. 7      loss: 0.002956939162686467
+batch nb. 8      loss: 0.003447824390605092
+batch nb. 9      loss: 0.004347901325672865
+batch nb. 10      loss: 0.0039642974734306335
+batch nb. 11      loss: 0.004451320506632328
+batch nb. 12      loss: 0.004466124344617128
+batch nb. 13      loss: 0.0032467597629874945
+batch nb. 14      loss: 0.003052016720175743
+batch nb. 15      loss: 0.0031192349269986153
+validation:          Loss: 0.003493788419291377 train loss : 0.004174549598246813
+new best model
+Epoch:  142
+batch nb. 0      loss: 0.003426576731726527
+batch nb. 1      loss: 0.0028433683328330517
+batch nb. 2      loss: 0.002544104354456067
+batch nb. 3      loss: 0.0026267762295901775
+batch nb. 4      loss: 0.0028026162181049585
+batch nb. 5      loss: 0.002853908110409975
+batch nb. 6      loss: 0.0032419830095022917
+batch nb. 7      loss: 0.0029787381645292044
+batch nb. 8      loss: 0.003408975200727582
+batch nb. 9      loss: 0.00431793462485075
+batch nb. 10      loss: 0.003958817571401596
+batch nb. 11      loss: 0.00448990985751152
+batch nb. 12      loss: 0.004459423944354057
+batch nb. 13      loss: 0.003254127921536565
+batch nb. 14      loss: 0.003063266398385167
+batch nb. 15      loss: 0.0032088509760797024
+validation:          Loss: 0.0035942140966653824 train loss : 0.004167796578258276
+Epoch:  143
+batch nb. 0      loss: 0.0035190999042242765
+batch nb. 1      loss: 0.002923951018601656
+batch nb. 2      loss: 0.0025817120913416147
+batch nb. 3      loss: 0.0026545757427811623
+batch nb. 4      loss: 0.0028300404082983732
+batch nb. 5      loss: 0.002893769647926092
+batch nb. 6      loss: 0.003282376332208514
+batch nb. 7      loss: 0.0030640128534287214
+batch nb. 8      loss: 0.0035227106418460608
+batch nb. 9      loss: 0.004399241413921118
+batch nb. 10      loss: 0.00399309117347002
+batch nb. 11      loss: 0.004479365888983011
+batch nb. 12      loss: 0.00450624106451869
+batch nb. 13      loss: 0.0032601007260382175
+batch nb. 14      loss: 0.003070305800065398
+batch nb. 15      loss: 0.0032380009070038795
+validation:          Loss: 0.0036052458453923464 train loss : 0.004161339718848467
+Epoch:  144
+batch nb. 0      loss: 0.0035399484913796186
+batch nb. 1      loss: 0.0029986740555614233
+batch nb. 2      loss: 0.002627089386805892
+batch nb. 3      loss: 0.0026540583930909634
+batch nb. 4      loss: 0.0028143913950771093
+batch nb. 5      loss: 0.0028978732880204916
+batch nb. 6      loss: 0.003308749059215188
+batch nb. 7      loss: 0.0030542609747499228
+batch nb. 8      loss: 0.003523916704580188
+batch nb. 9      loss: 0.004415287170559168
+batch nb. 10      loss: 0.00398901104927063
+batch nb. 11      loss: 0.0044507822021842
+batch nb. 12      loss: 0.004457737784832716
+batch nb. 13      loss: 0.003253706032410264
+batch nb. 14      loss: 0.0030502169393002987
+batch nb. 15      loss: 0.003222971921786666
+validation:          Loss: 0.003586388425901532 train loss : 0.004154868423938751
+Epoch:  145
+batch nb. 0      loss: 0.003520530415698886
+batch nb. 1      loss: 0.0029346300289034843
+batch nb. 2      loss: 0.002577441046014428
+batch nb. 3      loss: 0.002642580773681402
+batch nb. 4      loss: 0.002771860221400857
+batch nb. 5      loss: 0.002839463297277689
+batch nb. 6      loss: 0.0032378798350691795
+batch nb. 7      loss: 0.00301178265362978
+batch nb. 8      loss: 0.0034606195986270905
+batch nb. 9      loss: 0.00435477402061224
+batch nb. 10      loss: 0.003975062631070614
+batch nb. 11      loss: 0.004462519660592079
+batch nb. 12      loss: 0.004427095875144005
+batch nb. 13      loss: 0.003275973256677389
+batch nb. 14      loss: 0.0030090035870671272
+batch nb. 15      loss: 0.0031137082260102034
+validation:          Loss: 0.0035643738228827715 train loss : 0.004147736821323633
+Epoch:  146
+batch nb. 0      loss: 0.0034726965241134167
+batch nb. 1      loss: 0.002912882249802351
+batch nb. 2      loss: 0.002509734593331814
+batch nb. 3      loss: 0.00263211433775723
+batch nb. 4      loss: 0.0027750523295253515
+batch nb. 5      loss: 0.0028389005456119776
+batch nb. 6      loss: 0.0032237176783382893
+batch nb. 7      loss: 0.002992643741890788
+batch nb. 8      loss: 0.0035037004854530096
+batch nb. 9      loss: 0.004366924986243248
+batch nb. 10      loss: 0.003986631985753775
+batch nb. 11      loss: 0.004452636931091547
+batch nb. 12      loss: 0.004425014369189739
+batch nb. 13      loss: 0.003268468426540494
+batch nb. 14      loss: 0.0030465410090982914
+batch nb. 15      loss: 0.003114612540230155
+validation:          Loss: 0.0035572315100580454 train loss : 0.0041407085955142975
+Epoch:  147
+batch nb. 0      loss: 0.0034896512515842915
+batch nb. 1      loss: 0.0029805400408804417
+batch nb. 2      loss: 0.0025582141242921352
+batch nb. 3      loss: 0.002605485962703824
+batch nb. 4      loss: 0.002745318692177534
+batch nb. 5      loss: 0.0028206598944962025
+batch nb. 6      loss: 0.003223808715119958
+batch nb. 7      loss: 0.002985967556014657
+batch nb. 8      loss: 0.003447706811130047
+batch nb. 9      loss: 0.004334326833486557
+batch nb. 10      loss: 0.003974597901105881
+batch nb. 11      loss: 0.004427541047334671
+batch nb. 12      loss: 0.004415614530444145
+batch nb. 13      loss: 0.0032010842114686966
+batch nb. 14      loss: 0.002991077257320285
+batch nb. 15      loss: 0.003102801740169525
+validation:          Loss: 0.0034918650053441525 train loss : 0.00413369620218873
+new best model
+Epoch:  148
+batch nb. 0      loss: 0.003401749534532428
+batch nb. 1      loss: 0.002916548168286681
+batch nb. 2      loss: 0.002540227258577943
+batch nb. 3      loss: 0.0025940476916730404
+batch nb. 4      loss: 0.0027285772375762463
+batch nb. 5      loss: 0.0027675232850015163
+batch nb. 6      loss: 0.0031489036045968533
+batch nb. 7      loss: 0.0029549726750701666
+batch nb. 8      loss: 0.0033893126528710127
+batch nb. 9      loss: 0.004260148387402296
+batch nb. 10      loss: 0.003934050444513559
+batch nb. 11      loss: 0.004401032347232103
+batch nb. 12      loss: 0.004414435010403395
+batch nb. 13      loss: 0.0031921579502522945
+batch nb. 14      loss: 0.002925438340753317
+batch nb. 15      loss: 0.0029852509032934904
+validation:          Loss: 0.003405983094125986 train loss : 0.004125988110899925
+new best model
+Epoch:  149
+batch nb. 0      loss: 0.0033301643561571836
+batch nb. 1      loss: 0.002802836010232568
+batch nb. 2      loss: 0.0024900364223867655
+batch nb. 3      loss: 0.002561053493991494
+batch nb. 4      loss: 0.002711161272600293
+batch nb. 5      loss: 0.002745537320151925
+batch nb. 6      loss: 0.003116321051493287
+batch nb. 7      loss: 0.002892847405746579
+batch nb. 8      loss: 0.0033412622287869453
+batch nb. 9      loss: 0.0042416127398610115
+batch nb. 10      loss: 0.003933535888791084
+batch nb. 11      loss: 0.004347235895693302
+batch nb. 12      loss: 0.004405810497701168
+batch nb. 13      loss: 0.0031854838598519564
+batch nb. 14      loss: 0.002924992935732007
+batch nb. 15      loss: 0.0029630246572196484
+validation:          Loss: 0.003382292576134205 train loss : 0.004118235316127539
+new best model
+
