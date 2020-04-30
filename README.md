@@ -1,18 +1,18 @@
 # AutoEncoder
 AutoEncoder features extractor made with Tensorflow2
 
-Dependencies
+## Dependencies
   Tensorflow 2
   pickle
   numpy
   
-For data extraction:
+## For data extraction:
     scipy
     shennong
-If using Wav2Vec representation:
+## If using Wav2Vec representation:
     torch
     fairseq
     soundfile
-else, 
+## else, 
     remove in data.py class PretrainedWav2VecModel and Prediction function read_audio
     and erase import torch, nn, fairseq and soundfile
